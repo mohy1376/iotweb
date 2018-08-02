@@ -1,0 +1,12 @@
+.newsHeader{
+    background-color: #212529;
+  }
+  @media (min-width: 576px) {
+    .jumbotron {
+      padding-bottom: 0;
+  }
+  }
+  .jumbotron{
+      background-color: #212529;
+  }
+

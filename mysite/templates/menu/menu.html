@@ -11,7 +11,7 @@
 {% endfor %} -->
 {% load cms_tags menu_tags cache  %}
 
-<div class="dropdown">
+
     <ul class="navbar-nav ml-auto">
     {% for child in children %}
 <!-- no child pages  -->
@@ -21,14 +21,14 @@
 <!-- /no child pages  -->
 <!-- has child pages  -->
         {% if not child.is_leaf_node or child.ancestor %}
-            <li class="nav-item nav-link js-scroll-trigger dropdown">
+            <li class="nav-item nav-link  dropdown">
                 <a  href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
                 {{child.get_menu_title }}<b class="caret"></b></a>
                 <ul class="dropdown-menu">
                     {% if child.get_descendants %}
                         {% for kid in child.get_descendants %}
-                            <li class="nav-item nav-link js-scroll-trigger">
-                                <a class="nav-link" href="{{ kid.get_absolute_url }}">
+                            <li class="nav-link">
+                                <a class="nav-link " href="{{ kid.get_absolute_url }}">
                                     {{kid.get_menu_title }}
                                 </a>
                             </li>
@@ -41,4 +41,3 @@
     {% endfor %} 
 <!-- /end for child -->
 </ul>
-</div>
