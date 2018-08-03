@@ -2,25 +2,109 @@
 {% load cms_tags staticfiles %}
 
 {% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+
+
+
+
+
+
+
 {% block header %}
-<header class="masthead text-center text-white d-flex">
-	<div class="container my-auto">
-		<div class="row">
-			<div class="col-lg-10 mx-auto">
-				<h1 class="text-uppercase">
-					<strong>Your Favorite Source of Free Bootstrap Themes</strong>
-				</h1>
-				<hr>
+<div id="demo" class="carousel slide" data-ride="carousel" data-pause="false">
+	<ul class="carousel-indicators">
+		<li data-target="#demo" data-slide-to="0" class="active"></li>
+		<li data-target="#demo" data-slide-to="1"></li>
+		<li data-target="#demo" data-slide-to="2"></li>
+	  </ul>
+	
+	<div class="carousel-inner">
+	  <div class="carousel-item active">
+			
+					
+			<header class="masthead text-center text-white d-flex">
+					<img class="headerimg" src="{% static "img/2.jpg" %}" alt="faild"/>
+				<div class="container my-auto">
+					<div class="row">
+						<div class="col-lg-10 mx-auto">
+							<h1 class="text-uppercase">
+								<strong class="persian">{% placeholder text1_1 %}</strong>
+							</h1>
+							<hr>
+						</div>
+						<div class="col-lg-8 mx-auto">
+							<p class="text-faded mb-5">{% placeholder text1_2 %} </p>
+							<a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+						</div>
+					</div>
+				</div>
+			</header>
+
+	  </div> 
+	  <div class="carousel-item ">
+			<header class="masthead2 text-center text-white d-flex">
+			<img class="headerimg" src="{% static "img/3.jpg" %}" alt="faild"/>
+
+				<div class="container my-auto">
+					<div class="row">
+						<div class="col-lg-10 mx-auto">
+							<h1 class="text-uppercase">
+								<strong class="persian">{% placeholder text2_1 %}</strong>
+							</h1>
+							<hr>
+						</div>
+						<div class="col-lg-8 mx-auto">
+							<p class="text-faded mb-5">{% placeholder text2_2 %}</p>
+							<a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+						</div>
+					</div>
+				</div>
+			</header>
+
+	  </div>
+	  <div class="carousel-item">
+
+
+		<header class="masthead3 text-center text-white d-flex">
+		<img class="headerimg" src="{% static "img/1.jpg" %}" alt="faild"/>
+
+			<div class="container my-auto">
+				<div class="row">
+					<div class="col-lg-10 mx-auto">
+						<h1 class="text-uppercase">
+							<strong class="persian">{% placeholder text3_1 %}</strong>
+						</h1>
+						<hr>
+					</div>
+					<div class="col-lg-8 mx-auto">
+						<p class="text-faded mb-5">{% placeholder text3_2 %}</p>
+						<a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+					</div>
+				</div>
 			</div>
-			<div class="col-lg-8 mx-auto">
-				<p class="text-faded mb-5">Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-				<a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-			</div>
-		</div>
+		</header>
+	  </div>
 	</div>
-</header>
+	
+	<!-- Left and right controls -->
+   
+  </div>
+
 {% endblock header %}
-{% block content %}
+
+
+
+
+
+
+
+
+
+
+
+{% block content  %}
+
+{% placeholder HomeAbout or %}
 <section class="bg-primary" id="about">
 	<div class="container">
 	  <div class="row">
@@ -33,7 +117,9 @@
 	  </div>
 	</div>
   </section>
- 
+ {% endplaceholder %}
+
+
 	{% placeholder content or %}
 	
 	<section id="services">

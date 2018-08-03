@@ -17,6 +17,16 @@ hr {
 hr.light {
   border-color: #fff;
 }
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 a {
   color: #F05F40;
@@ -168,16 +178,6 @@ img::-moz-selection {
 
 
 
-header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/2.jpg"); 
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
 header.masthead hr {
   margin-top: 30px;

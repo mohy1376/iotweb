@@ -1,22 +1,12 @@
-<!--{% load cms_tags menu_tags  cache  %}
 
-{% for child in children %}
-
-    <li class="nav-item nav-link js-scroll-trigger ">
-
-        <a class="nav-link js-scroll-trigger" href="{{ child.attr.redirect_url|default:child.get_absolute_url }}">{{ child.get_menu_title }}</a>
-        
-    </li>
-
-{% endfor %} -->
-{% load cms_tags menu_tags cache  %}
+{% load cms_tags menu_tags sekizai_tags  %}
 
 
     <ul class="navbar-nav ml-auto">
     {% for child in children %}
 <!-- no child pages  -->
         {% if child.is_leaf_node %}
-            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link" href="{{ child.get_absolute_url }}">{{child.get_menu_title }}</a></li>
+            <li class="nav-item nav-link "><a class="nav-link js-scroll-trigger" href="{{ child.get_absolute_url }}">{{child.get_menu_title }}</a></li>
         {% endif %}
 <!-- /no child pages  -->
 <!-- has child pages  -->
@@ -27,7 +17,7 @@
                 <ul class="dropdown-menu">
                     {% if child.get_descendants %}
                         {% for kid in child.get_descendants %}
-                            <li class="nav-link">
+                            <li class="nav-link nav-item">
                                 <a class="nav-link " href="{{ kid.get_absolute_url }}">
                                     {{kid.get_menu_title }}
                                 </a>
