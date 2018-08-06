@@ -45,7 +45,7 @@ ROOT_URLCONF = 'mysite.urls'
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'fa'
 
 TIME_ZONE = 'Asia/Tehran'
 
@@ -147,27 +147,41 @@ INSTALLED_APPS = (
 
 LANGUAGES = (
     ## Customize this
-    ('en',gettext('en')),
+   ('fa',gettext('fa')),
+   ('en',gettext('en')),
+   ('fr',gettext('French')),
  
-    
    
+
 )
 
 CMS_LANGUAGES = {
     ## Customize this
     1: [
         {
-            'code': 'en',
-            'name': gettext('en'),
-            'redirect_on_fallback': True,
+            'code': 'fa',
+            'name': gettext('Farsi'),
+            'fallbacks': ['en', 'fr'],
             'public': True,
-            'hide_untranslated': False,
+            'hide_untranslated': True,
+            'redirect_on_fallback':False,
+        },
+        {
+            'code': 'en',
+            'name': gettext('English'),
+            'fallbacks': ['fa', 'fr'],
+            'public': True,
+        },
+        {
+            'code': 'fr',
+            'name': gettext('French'),
+            'public': True, 
 
-            
         },
     ],
     
-
+    
+    
     'default': {
         'redirect_on_fallback': True,
         'public': True,
@@ -180,6 +194,10 @@ CMS_TEMPLATES = (
  
     ('home.html', 'Home'),
     ('news.html', 'News'),
+    ('articles.html','Articles'),
+    ('work.html','Work'),
+    ('events.html','Event'),
+    
 
 )
 

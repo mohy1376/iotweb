@@ -24,12 +24,14 @@
            url('../fonts/BMorvarid.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
            url('../fonts/BMorvarid.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
     }
+@font-face {
+        font-family: 'BRoya';
+        src: url('../fonts/BRoya.eot?#') format('eot'),  /* IE6–8 */
+             url('../fonts/BRoya.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+             url('../fonts/BRoya.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+      }
+  
 
-
-.persian{
-
-    font-family: BTehran;
-}
 
 .dropdown:hover>.dropdown-menu {
     display: block;
@@ -39,48 +41,9 @@
    
       pointer-events: none;
   }  */
-
- 
-
-header.masthead2 {
-    padding-top: 10rem;
-    padding-bottom: calc(10rem - 56px);
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-header.masthead3 {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
-
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-@media (min-width: 992px){
-header.masthead2 {
-    height: 100vh;
-    min-height: 650px;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-}
-    
-@media (min-width: 992px){
-header.masthead3 {
-    height: 100vh;
-    min-height: 650px;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-}
 .dropdown-menu{
     border: none;
-    background-color: rgb(139, 139, 133,0.4);
+    background-color: rgba(85, 85, 85, 0.8);
     margin-top: 10px;
 
 }
@@ -90,7 +53,7 @@ header.masthead3 {
    text-transform: uppercase;
 }
 .navbar-light .navbar-nav .nav-link{
-    color: rgb(153, 147, 147);
+    color: rgb(196, 187, 187);
     font-size: .9rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -101,4 +64,28 @@ header.masthead3 {
     left: 0;
     right: 0;
     width: 100%;
+    
+}
+.persian{
+    font-family: BRoya;
+    font-size: 150%;
+}
+.persianText{
+    font-family: BRoya;
+    font-size: 150%;
+
+}
+.persianTitle{
+    font-family: BRoya;
+    font-size: 250%;
+}
+.size{
+    width: 50%;
+}
+.rtl{
+   direction: rtl;
+}
+.language{
+    color: whitesmoke;
+    font-weight: bold;
 }

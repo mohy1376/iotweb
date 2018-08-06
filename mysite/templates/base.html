@@ -1,4 +1,5 @@
 {% load cms_tags menu_tags sekizai_tags staticfiles %}
+
 <!DOCTYPE html>
 <html lang="{{LANGUAGE_CODE}}">
 
@@ -9,7 +10,7 @@
     <meta name="description" content="{% page_attribute 'meta_description' %}">
     <meta name="author" content="">
 
-    <title>{% page_attribute 'page_title' %} - Creative</title>
+    <title>{% page_attribute 'page_title' %} - IOT Department</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
@@ -30,8 +31,23 @@
    {% cms_toolbar %}
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="nav-link nav-item dropdown">
+            <a href="#" class="language dropdown-toggle nav-link" data-toggle="dropdown">فا/En <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                      <li class="nav-link nav-item">
+                          <a class="nav-link language " href="/fa">
+                            فارسی
+                          </a>
+                      </li>
+                      <li class="nav-link nav-item">
+                        <a href="/en" class="nav-link language">
+                        English
+                        </a>
+                      </li>
+          </ul>
+        </div>
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">IOT Department</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">دپارتمان اینترنت چیز ها</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -51,9 +67,12 @@
     {% block content %} {% endblock %}
 
 
-    <footer>
+
+
+    
+         <footer>
        {% static_placeholder "Footer" %}
-    </footer>
+         </footer>
 
 
 

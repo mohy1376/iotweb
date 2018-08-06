@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load cms_tags staticfiles %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+
+{% block header %}
+<header class="jumbotron"></header>
+{% endblock header %}
+
+{
+
+{% block content %}
+ {% placeholder contentNewsPage  %}
+{% endblock content %}
