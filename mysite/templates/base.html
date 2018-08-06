@@ -1,7 +1,7 @@
 {% load cms_tags menu_tags sekizai_tags staticfiles %}
 
 <!DOCTYPE html>
-<html lang="{{LANGUAGE_CODE}}">
+<html  lang="{{LANGUAGE_CODE}}">
 
   <head>
 
@@ -27,38 +27,10 @@
    {% render_block "css" %}
   </head>
 
-  <body id="page-top">
+  <body class="cursor" id="page-top">
    {% cms_toolbar %}
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="nav-link nav-item dropdown">
-            <a href="#" class="language dropdown-toggle nav-link" data-toggle="dropdown">فا/En <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-                      <li class="nav-link nav-item">
-                          <a class="nav-link language " href="/fa">
-                            فارسی
-                          </a>
-                      </li>
-                      <li class="nav-link nav-item">
-                        <a href="/en" class="nav-link language">
-                        English
-                        </a>
-                      </li>
-          </ul>
-        </div>
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">دپارتمان اینترنت چیز ها</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-
-          <ul class="navbar-nav ml-auto  ">
-              {% show_menu 0 100 100 100 "menu/menu.html" %}
-          </ul>
-        </div>
-      </div>
-    </nav>
+    {% block nav %}{% endblock %}
 
 
     {% block header %} {% endblock %}
