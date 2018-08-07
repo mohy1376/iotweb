@@ -8,7 +8,101 @@
 <header class="jumbotron"></header>
 {% endblock header %}
 
-{
+
+{% block nav %}
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+		<img class="logo" src="{% static "img/logo2.png"%}" alt="faild">
+		<img class="logo" src="{% static "img/logo3.jpg"%}" alt="faild">
+  
+		<div class="container">
+		  <a class="navbar-brand js-scroll-trigger" href="#page-top">دپارتمان اینترنت چیز ها</a>
+		  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarResponsive">
+  
+			<ul class="navbar-nav ml-auto  ">
+		<li class="nav-item nav-link">
+			<a href="/" class="nav-link js-scroll-trigger">صفحه اصلی</a>
+		</li>
+		<li class="nav-item nav-link">
+			<a href="/fa/about" class="nav-link js-scroll-trigger">درباره ی ما</a>
+		</li>
+		<li class="nav-item nav-link">
+			<a href="/fa/events" class="nav-link js-scroll-trigger">رویدادها</a>
+		</li>
+		<li class="nav-item nav-link">
+			<a href="/fa/khbr" class="nav-link js-scroll-trigger">اخبار</a>
+		</li>
+
+		<li class="nav-item nav-link">
+			<a href="/fa/articles" class="nav-link js-scroll-trigger">مقالات</a>
+		</li>
+
+		<li class="nav-item nav-link">
+			<a href="/fa/hmr-b-m" class="nav-link js-scroll-trigger">همکاری با ما</a>
+		</li>
+		<li class="nav-item nav-link">
+			<a href="/fa/dnshnmh" class="nav-link js-scroll-trigger">دانشنامه</a>
+		</li>
+		<li class="nav-item nav-link">
+				<a href="/fa/media" class="nav-link js-scroll-trigger">مدیا</a>
+			</li>
+	
+		<li class="nav-item nav-link dropdown">
+			<a href="#" class="language dropdown-toggle nav-link" data-toggle="dropdown">دسته بندی <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+						  <li class="nav-link nav-item">
+							  <a class="nav-link " href="/fa/dsth-bnd/khnh-hoshmnd">
+								خانه ی هوشمند
+							  </a>
+						  </li>
+						  <li class="nav-link nav-item">
+							<a href="/fa/dsth-bnd/shhr-hoshmnd" class="nav-link ">
+							شهر هوشمند
+							</a>
+						  </li>
+						  <li class="nav-link nav-item">
+								<a href="/fa/dsth-bnd/snaat-nsl" class="nav-link ">
+								صنعت نسل ۴
+								</a>
+						   </li>
+						   <li class="nav-link nav-item">
+								<a href="/fa/dsth-bnd/mnt" class="nav-link ">
+								امنیت
+								</a>
+							  </li>
+			    </ul>
+		   
+	    </li>
+
+
+
+
+				<li class="nav-item nav-link dropdown">
+					<a href="#" class="language dropdown-toggle nav-link" data-toggle="dropdown">فا/En <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+							  <li class="nav-link nav-item">
+								  <a class="nav-link language " href="/fa">
+									فارسی
+								  </a>
+							  </li>
+							  <li class="nav-link nav-item">
+								<a href="/en" class="nav-link language">
+								English
+								</a>
+							  </li>
+				  </ul>
+			   
+				</li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+
+{% endblock %}
+
+
 
 {% block content %}
  {% placeholder contentNewsPage  %}

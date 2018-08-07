@@ -44,7 +44,7 @@
 .dropdown-menu{
     border: none;
     background-color: rgba(85, 85, 85, 0.8);
-    margin-top: 10px;
+    
 
 }
 
@@ -163,4 +163,12 @@ header.masthead3 {
 header.masthead4 {
     background-image: url("../img/4.jpg");
     
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link, #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+
+    font-size: 85%;
+
+}
+#mainNav .navbar-brand{
+    font-size: 95%;
 }
