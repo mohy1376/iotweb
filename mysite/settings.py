@@ -141,7 +141,8 @@ INSTALLED_APPS = (
     'djangocms_video',
     'aldryn_style',
     'aldryn_bootstrap3',
-    'mysite'
+    'mysite',
+    'iot'
 
 )
 

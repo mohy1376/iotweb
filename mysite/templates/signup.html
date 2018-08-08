@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    
+    <form action="" method="POST" >
+            {% csrf_token %}
+        <fieldset>
+            <legend>حساب جدید بسازید:</legend>
+            <br> نام کاربری :<br>
+            <input type="text" name="username" required>
+            <br> رمز عبور :<br>
+            <input type="text" name="password" required>
+            <br> ایمیل : <br>
+            <input type="email" name="email">
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
