@@ -13,7 +13,9 @@ from django.http import HttpResponse
 
 from .forms import UserForm
 # Create your views here.
-
+def index(request):
+     return HttpResponse("Hello. It is a test")
+     
 class UserFormView(View):
     form_class = UserForm
     template_name = 'signup.html'
