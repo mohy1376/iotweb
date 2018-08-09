@@ -173,12 +173,7 @@ CMS_LANGUAGES = {
             'fallbacks': ['fa', 'fr'],
             'public': True,
         },
-        {
-            'code': 'fr',
-            'name': gettext('French'),
-            'public': True, 
-
-        },
+        
     ],
     
     
@@ -198,6 +193,14 @@ CMS_TEMPLATES = (
     ('articles.html','Articles'),
     ('work.html','Work'),
     ('events.html','Event'),
+    ('about.html','About'),
+    ('smarthome.html','smarthome'),
+    ('smartcity.html','smartcity'),
+    ('security.html','Security'),
+    ('industry.html','Industry'),
+    ('wiki.html','Wiki'),
+    ('media.html','Media'),
+
     
 
 )
