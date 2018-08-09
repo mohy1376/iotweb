@@ -220,3 +220,37 @@ Footer h6{
 .bg-events{
     background-color: #f0a800;
 }
+.bg-news{
+    background-color: #326363;
+}
+.bg-articles{
+    background-color: #283a41;
+}
+.bg-work{
+    background-color: #043241;
+}
+#about h3, h2 {
+    font-family:BRoya;
+
+}
+#news h2 {
+    font-family: BRoya;
+}
+#about hr {
+    border-color: #043241;
+}
+#news hr {
+    border-color: antiquewhite;
+}
+#news .col {
+    border: solid;
+    border-color: #9d9d9d;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    min-height: 200px;
+  margin-right: 20px;
+    margin-bottom: 20px;
+}
+.newsheader{
+    background-image: url("../img/3.jpg");
+}

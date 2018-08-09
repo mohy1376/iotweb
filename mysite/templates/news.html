@@ -5,17 +5,17 @@
 
 
 {% block header %}
-<header class="jumbotron"></header>
+<header class="masthead newsheader text-center text-white d-flex"></header>
 {% endblock header %}
 
 
 {% block nav %}
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-		<img class="logo" src="{% static "img/logo2.png"%}" alt="faild">
-		<img class="logo" src="{% static "img/logo3.jpg"%}" alt="faild">
+	
+	
   
 		<div class="container">
-		  <a class="navbar-brand js-scroll-trigger" href="#page-top">دپارتمان اینترنت چیز ها</a>
+		  <a class="navbar-brand js-scroll-trigger" href="#page-top">	<img class="logo navbar-brand" src="{% static "img/logo3.jpg"%}" alt="faild">دپارتمان اینترنت اشیاء</a>
 		  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>
@@ -26,7 +26,7 @@
 			<a href="/" class="nav-link js-scroll-trigger">صفحه اصلی</a>
 		</li>
 		<li class="nav-item nav-link">
-			<a href="/fa/about" class="nav-link js-scroll-trigger">درباره ی ما</a>
+			<a href="/fa/drbrh-m" class="nav-link js-scroll-trigger">درباره ی ما</a>
 		</li>
 		<li class="nav-item nav-link">
 			<a href="/fa/events" class="nav-link js-scroll-trigger">رویدادها</a>
@@ -99,11 +99,36 @@
 		  </div>
 		</div>
 	  </nav>
-
 {% endblock %}
 
-
-
 {% block content %}
- {% placeholder contentNewsPage  %}
+<div class="container bg-light">
+		<article class="post tag-announcement">
+        <header class="post-header">
+            <span class="post-meta"><time datetime="2018-06-28">28 Jun 2018</time>, on <a href="/">announcement</a>, <a href="/">0 Comments</a></span>
+            <h2 class="post-title"><a href="/">Evolve your fleet: manage multiple device types in one application</a></h2>
+
+        </header>
+        <section class="post-excerpt">
+            <p>When it comes to managing a fleet of remote devices, we know there are many points of friction. Our goal at resin.io is to eliminate as many of these as we can, and we've put a lot of work into making deployments across device types as similar as possible.<a href="/blog/evolve-your-fleet-manage-multiple-device-types-in-one-application/">…</a></p>
+        </section>
+		</article>
+		<hr>
+		<article class="post tag-announcement">
+        <header class="post-header">
+            <span class="post-meta"><time datetime="2018-06-28">28 Jun 2018</time>, on <a href="/">announcement</a>, <a href="/">0 Comments</a></span>
+            <h2 class="post-title"><a href="/">Evolve your fleet: manage multiple device types in one application</a></h2>
+
+        </header>
+        <section class="post-excerpt">
+            <p>When it comes to managing a fleet of remote devices, we know there are many points of friction. Our goal at resin.io is to eliminate as many of these as we can, and we've put a lot of work into making deployments across device types as similar as possible.<a href="/blog/evolve-your-fleet-manage-multiple-device-types-in-one-application/">…</a></p>
+        </section>
+		</article>
+</div>
+
+
+
+
+
+ 
 {% endblock content %}
