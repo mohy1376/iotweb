@@ -152,10 +152,11 @@ footer > section {
 .copyright{
     opacity: 0.5;
     font-size: 13px;
+    font-family: 'Courier New', Courier, monospace;
 }
 .copyright:hover{
     opacity: 1;
-    font-size: 16px;
+    
 }
 @media (min-width: 992px){
 #mainNav .navbar-nav > li.nav-item > a.nav-link {
@@ -196,4 +197,23 @@ header.masthead4 {
     color:rgb(182, 178, 178);
     
 }
+}
+.bg-navy{
+    background-color:#1b2331;
+}
+.bg-navy2{
+    background-color: #141a25;
+}
+.hr-color{
+    
+    width: 60px;
+    border-color: #0bf;
+}
+footer > section {
+    padding-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+Footer h6{
+    font-family: BRoya;
+    font-size: 19px;
 }
