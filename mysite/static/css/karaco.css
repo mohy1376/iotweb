@@ -175,7 +175,7 @@ header.masthead3 {
     
 }
 header.masthead4 {
-    background-image: url("../img/4.jpg");
+    background-image: url("../img/13.jpg");
     
 }
 #mainNav .navbar-nav > li.nav-item > a.nav-link, #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -325,7 +325,7 @@ post-title a:hover {
 }
 ::selection {
     color: #222;
-    background: #905;
+    background: rgb(8, 159, 230);
     text-shadow: none;
 }
 .articlesheader{
@@ -339,4 +339,35 @@ post-title a:hover {
 }
 .bg-gray{
     background-color: lightgray;
+}
+.aboutheader{
+    background-image: url("../img/8.jpg");
+}
+.events1{
+    background-image: url("../img/11.jpg");
+}
+
+.events2{
+    background-image: url("../img/9.jpg");
+}
+.events3{
+    background-image: url("../img/10.jpg");
+}
+.events4{
+    background-image: url("../img/12.jpg");
+}
+.media1{
+    background-image: url("../img/14.jpg");
+}
+.media2{
+    background-image: url("../img/15.jpg");
+}
+.media3{
+    background-image: url("../img/16.jpg");
+}
+.wiki1{
+    background-image: url("../img/17.jpg");
+}
+.wiki2{
+    background-image: url("../img/18.jpg");
 }
