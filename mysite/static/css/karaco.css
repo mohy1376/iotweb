@@ -252,5 +252,81 @@ Footer h6{
     margin-bottom: 20px;
 }
 .newsheader{
-    background-image: url("../img/3.jpg");
+    background-image: url("../img/5.jpg");
+}
+.post-meta {
+    display: inline-block;
+    margin: 0 0 5px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #9EABB3;
+}
+.post-meta a:hover {
+    text-decoration: underline;
+}
+.post-meta a {
+    color: #9EABB3;
+    text-decoration: none;
+}
+.post {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 4rem auto;
+    padding-bottom: 4rem;
+    border-bottom: #EBF2F6 1px solid;
+    word-break: break-word;
+}
+.post-title {
+    margin: 0;
+}
+article h2 {
+    font-size: 2rem;
+    line-height: 1.2em;
+    letter-spacing: -1px;
+    text-indent: -2px;
+}
+.post:after {
+    display: block;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border: #E7EEF2 1px solid;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    background: #fff;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    box-shadow: #fff 0 0 0 5px;
+}
+article > header > h2 > a {
+    color: #514f4f;
+    font-family: sans-serif;
+}
+article > header > h2 > a:hover {
+    color: #57A3E8;
+    text-decoration: none;
+}
+post-title  a {
+    text-decoration: none;
+    color: #043241;
+}
+post-title a:hover {
+    color: #57A3E8;
+    text-decoration: none;
+}
+.post-excerpt{
+    margin: 0px;
+    padding: 0px;
+}
+::selection {
+    color: #222;
+    background: #905;
+    text-shadow: none;
+}
+.articlesheader{
+    background-image: url("../img/6.jpg");
 }
