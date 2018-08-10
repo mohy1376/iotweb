@@ -159,6 +159,13 @@ footer > section {
     
 }
 @media (min-width: 992px){
+
+#mainNav {
+    border-color: transparent;
+    background-color: #00000059;
+    height: 120px;
+}
+
 #mainNav .navbar-nav > li.nav-item > a.nav-link {
   padding: 10px; 
 }}
@@ -175,7 +182,7 @@ header.masthead3 {
     
 }
 header.masthead4 {
-    background-image: url("../img/4.jpg");
+    background-image: url("../img/13.jpg");
     
 }
 #mainNav .navbar-nav > li.nav-item > a.nav-link, #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -185,6 +192,7 @@ header.masthead4 {
 }
 #mainNav .navbar-brand{
     font-size: 120%;
+    font-family: BRoya;
 }
 .bg-black{
     background-color: black;
@@ -274,7 +282,7 @@ Footer h6{
     max-width: 800px;
     margin: 4rem auto;
     padding-bottom: 4rem;
-    border-bottom: #EBF2F6 1px solid;
+    border-bottom: #209ce2 1px solid;
     word-break: break-word;
 }
 .post-title {
@@ -286,12 +294,12 @@ article h2 {
     letter-spacing: -1px;
     text-indent: -2px;
 }
-.post:after {
+.post:after  {
     display: block;
     content: "";
     width: 7px;
     height: 7px;
-    border: #E7EEF2 1px solid;
+    border: rgb(50, 175, 247) 1px solid;
     position: absolute;
     bottom: -5px;
     left: 50%;
@@ -300,7 +308,7 @@ article h2 {
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
-    box-shadow: #fff 0 0 0 5px;
+    box-shadow: #fff 0 0 0 2px;
 }
 article > header > h2 > a {
     color: #514f4f;
@@ -324,9 +332,54 @@ post-title a:hover {
 }
 ::selection {
     color: #222;
-    background: #905;
+    background: rgb(8, 159, 230);
     text-shadow: none;
 }
 .articlesheader{
     background-image: url("../img/6.jpg");
+}
+.workheader{
+    background-image: url("../img/7.jpg");
+}
+.bg-blue{
+    background-color: #0f3c69;
+}
+.bg-gray{
+    background-color: lightgray;
+}
+.aboutheader{
+    background-image: url("../img/8.jpg");
+}
+.events1{
+    background-image: url("../img/11.jpg");
+}
+
+.events2{
+    background-image: url("../img/9.jpg");
+}
+.events3{
+    background-image: url("../img/10.jpg");
+}
+.events4{
+    background-image: url("../img/12.jpg");
+}
+.media1{
+    background-image: url("../img/14.jpg");
+}
+.media2{
+    background-image: url("../img/15.jpg");
+}
+.media3{
+    background-image: url("../img/16.jpg");
+}
+.wiki1{
+    background-image: url("../img/17.jpg");
+}
+.wiki2{
+    background-image: url("../img/18.jpg");
+}
+.bg-grayy{
+    background-color: #f2f2f2;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

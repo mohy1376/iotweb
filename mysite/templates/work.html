@@ -5,17 +5,23 @@
 
 
 {% block header %}
-<header class="jumbotron"></header>
+<header class="masthead workheader text-center text-white d-flex"
+
+
+
+
+
+></header>
 {% endblock header %}
 
 
 {% block nav %}
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-		<img class="logo" src="{% static "img/logo2.png"%}" alt="faild">
-		<img class="logo" src="{% static "img/logo3.jpg"%}" alt="faild">
+	
+	
   
 		<div class="container">
-		  <a class="navbar-brand js-scroll-trigger" href="#page-top">دپارتمان اینترنت چیز ها</a>
+		  <a class="navbar-brand js-scroll-trigger" href="#page-top">	<img class="logo navbar-brand" src="{% static "img/logo3.jpg"%}" alt="faild">دپارتمان اینترنت اشیاء</a>
 		  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>
@@ -26,7 +32,7 @@
 			<a href="/" class="nav-link js-scroll-trigger">صفحه اصلی</a>
 		</li>
 		<li class="nav-item nav-link">
-			<a href="/fa/about" class="nav-link js-scroll-trigger">درباره ی ما</a>
+			<a href="/fa/drbrh-m" class="nav-link js-scroll-trigger">درباره ی ما</a>
 		</li>
 		<li class="nav-item nav-link">
 			<a href="/fa/events" class="nav-link js-scroll-trigger">رویدادها</a>
@@ -99,11 +105,34 @@
 		  </div>
 		</div>
 	  </nav>
-
 {% endblock %}
 
-
-
 {% block content %}
- {% placeholder contentNewsPage  %}
+
+<section class="bg-blue">
+
+	<div class="text-white rtl text-center container">
+		ما در زمینه‌ی رصد اخبار جهان، ترجمه‌ی مقالات و تکمیل دانشنامه به افراد زبده و علاقه‌مند احتیاج داریم. اگر مایل به همکاری هستید، با ما تماس بگیرید. شما همچنین می‌توانید ویدیوها و پادکست های خود را در حوزه ی اینترنت اشیاء برای ما بفرستید تا طبق مقررات سایت بارگذاری شوند.
+
+
+	</div>
+
+
+
+</section>
+
+
+<section class="bg-gray">
+
+	<div class="rtl text-center container">
+فرم ارسال درخواست و رزومه و ...
+
+
+	</div>
+
+
+
+</section>
+
+ 
 {% endblock content %}
