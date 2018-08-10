@@ -28,14 +28,16 @@ header.masthead {
 }
 
 a {
-  color: #F05F40;
+  color: rgb(199, 196, 195);
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #f05f40;
+  color: #f3eae8;
+  text-decoration: none;
 }
 
 h1,
