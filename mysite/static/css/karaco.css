@@ -185,6 +185,7 @@ header.masthead4 {
 }
 #mainNav .navbar-brand{
     font-size: 120%;
+    font-family: BRoya;
 }
 .bg-black{
     background-color: black;
@@ -329,4 +330,13 @@ post-title a:hover {
 }
 .articlesheader{
     background-image: url("../img/6.jpg");
+}
+.workheader{
+    background-image: url("../img/7.jpg");
+}
+.bg-blue{
+    background-color: #0f3c69;
+}
+.bg-gray{
+    background-color: lightgray;
 }
