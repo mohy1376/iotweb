@@ -159,6 +159,13 @@ footer > section {
     
 }
 @media (min-width: 992px){
+
+#mainNav {
+    border-color: transparent;
+    background-color: #00000059;
+    height: 120px;
+}
+
 #mainNav .navbar-nav > li.nav-item > a.nav-link {
   padding: 10px; 
 }}
