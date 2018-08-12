@@ -118,9 +118,7 @@
     color: whitesmoke;
     font-weight: bold;
 }
-footer .col-lg-3:not(:last-child) {
-    border-right: 1px solid rgb(196, 190, 190,0.5);
-}
+
 html {
     overflow: scroll;
     overflow-x: hidden;
@@ -219,8 +217,13 @@ header.masthead4 {
 }
 footer > section {
     padding-top: 10px;
-    font-family: 'Courier New', Courier, monospace;
 }
+
+
+.footerelements{
+    font-size: 20px;
+}
+
 Footer h6{
     font-family: BRoya;
     font-size: 19px;
@@ -382,4 +385,8 @@ post-title a:hover {
     background-color: #f2f2f2;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+body {
+    font-family: BRoya;
+    
 }
