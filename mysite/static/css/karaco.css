@@ -217,8 +217,13 @@ header.masthead4 {
 }
 footer > section {
     padding-top: 10px;
-    font-family: 'Courier New', Courier, monospace;
 }
+
+
+.footerelements{
+    font-size: 20px;
+}
+
 Footer h6{
     font-family: BRoya;
     font-size: 19px;
@@ -248,13 +253,13 @@ Footer h6{
 #news hr {
     border-color: antiquewhite;
 }
-#news .col {
+
+#news .col-md-4,#news .col-lg-4,#news .col-xs-12 {
     border: solid;
     border-color: #9d9d9d;
     background-color: whitesmoke;
     border-radius: 20px;
     min-height: 200px;
-  margin-right: 20px;
     margin-bottom: 20px;
 }
 .newsheader{
@@ -380,4 +385,8 @@ post-title a:hover {
     background-color: #f2f2f2;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+body {
+    font-family: BRoya;
+    
 }
