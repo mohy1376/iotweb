@@ -17,6 +17,9 @@
     
     
     {% block header %}
+
+    <!--    <header class="masthead aboutheader text-center text-white d-flex"></header>
+
     <div id="demo" class="carousel carousel-fade slide" data-ride="carousel" data-pause="false">
         <ul class="carousel-indicators">
             <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -113,24 +116,24 @@
     
        
       </div>
-    
+    -->
     {% endblock header %}
     {% block content %}
 <section>
-    <div class="container">
+    <div class="container" style="margin-top: 20px">
     <form action="" method="POST" >
         {% csrf_token %}
-    <fieldset>
-        <legend>حساب جدید بسازید:</legend>
-        <br> نام کاربری :<br>
+    <fieldset class="text-center">
+        <legend>:حساب جدید بسازید</legend>
+        <br> :نام کاربری<br>
         <input type="text" name="username" required>
-        <br> رمز عبور :<br>
-        <input type="text" name="password" required>
-        <br> ایمیل : <br>
+        <br> :رمز عبور<br>
+        <input type="password" name="password" required>
+        <br> :ایمیل <br>
         <input type="email" name="email">
         <br><br>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
+        <input type="reset" value="بازنشانی">
+        <input type="submit" value="ثبت نام">
     </fieldset>
 </form>
 </div>
