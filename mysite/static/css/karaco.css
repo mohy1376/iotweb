@@ -219,6 +219,10 @@ footer > section {
     padding-top: 10px;
 }
 
+.tozihat{
+    font-size: 25px;
+
+}
 
 .footerelements{
     font-size: 20px;
@@ -240,17 +244,17 @@ Footer h6{
 .bg-articles{
     background-color: #283a41;
 }
-.bg-work{
-    background-color: #043241;
+.bg-wiki{
+    background-color: #10b663;
 }
-#about h3, h2 {
+#events h3, h2 {
     font-family:BRoya;
 
 }
 #news h2 {
     font-family: BRoya;
 }
-#about hr {
+#events hr {
     border-color: #043241;
 }
 #news hr {
