@@ -226,7 +226,10 @@ footer > section {
 
 Footer h6{
     font-family: BRoya;
-    font-size: 19px;
+    font-size: 140%;
+}
+.footerlink{
+    font-family: monospace;
 }
 .bg-events{
     background-color: #f0a800;
