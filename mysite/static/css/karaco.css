@@ -118,9 +118,7 @@
     color: whitesmoke;
     font-weight: bold;
 }
-footer .col-lg-3:not(:last-child) {
-    border-right: 1px solid rgb(196, 190, 190,0.5);
-}
+
 html {
     overflow: scroll;
     overflow-x: hidden;
