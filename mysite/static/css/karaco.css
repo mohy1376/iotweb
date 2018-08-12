@@ -185,7 +185,7 @@ header.masthead4 {
 }
 #mainNav .navbar-nav > li.nav-item > a.nav-link, #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
 
-    font-size: 85%;
+    font-size: 130%;
 
 }
 #mainNav .navbar-brand{
@@ -390,3 +390,8 @@ body {
     font-family: BRoya;
     
 }
+#mainNav {
+
+font-family: BRoya;
+}
+
