@@ -3,7 +3,7 @@
     {% extends "base.html" %}
     {% load cms_tags staticfiles %}
     
-    {% block title %}{% page_attribute "page_title" %}{% endblock title %}
+    {% block title %}{% page_attribute "page_title" %}  {% endblock title %}
     
     
     {% block nav %}
@@ -18,105 +18,9 @@
     
     {% block header %}
 
-    <!--    <header class="masthead aboutheader text-center text-white d-flex"></header>
+    <header class="masthead signupheader text-center text-white d-flex"></header>
 
-    <div id="demo" class="carousel carousel-fade slide" data-ride="carousel" data-pause="false">
-        <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-            <li data-target="#demo" data-slide-to="3"></li>
-            
-          </ul>
-        
-        <div class="carousel-inner">
-          <div class="carousel-item active">		
-                <header class="masthead events1 text-center text-white d-flex">
-                  
-                    <div class="container my-auto">
-                        <div class="row">
-                            <div class="col-lg-10 mx-auto">
-                                <h1 class="text-uppercase">
-                                    <strong class="persian">{% placeholder text1_1 %}</strong>
-                                </h1>
-                    
-                            </div>
-                            <div class="col-lg-8 mx-auto">
-                                <p class="text-faded mb-5">{% placeholder text1_2 %} </p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </header>
-    
-          </div> 
-          <div class="carousel-item ">
-                <header class=" masthead events2 text-center text-white d-flex">
-                    <div class="container my-auto">
-                        <div class="row">
-                            <div class="col-lg-10 mx-auto">
-                                <h1 class="text-uppercase">
-                                    <strong class="persian">{% placeholder text2_1 %}</strong>
-                                </h1>
-                    
-                            </div>
-                            <div class="col-lg-8 mx-auto">
-                                <p class="text-faded mb-5">{% placeholder text2_2 %}</p>
-                            
-                            </div>
-                        </div>
-                    </div>
-                </header>
-    
-          </div>
-          <div class="carousel-item">
-    
-    
-            <header class="events3 masthead text-center text-white d-flex">
-                
-            
-    
-                <div class="container my-auto">
-                    <div class="row">
-                        <div class="col-lg-10 mx-auto">
-                            <h1 class="text-uppercase">
-                                <strong class="persian">{% placeholder text3_1 %}</strong>
-                            </h1>
-                        
-                        </div>
-                        <div class="col-lg-8 mx-auto">
-                            <p class="text-faded mb-5">{% placeholder text3_2 %}</p>
-                        
-                        </div>
-                    </div>
-                </div>
-            </header>
-          </div>
-          <div class="carousel-item ">
-            <header class="events4 masthead text-center text-white d-flex">
-                    <div class="container my-auto">
-                        <div class="row">
-                            <div class="col-lg-10 mx-auto">
-                                <h1 class="text-uppercase">
-                                    <strong class="persian">{% placeholder text4_1 %}</strong>
-                                </h1>
-                        
-                            </div>
-                            <div class="col-lg-8 mx-auto">
-                                <p class="text-faded mb-5">{% placeholder text4_2 %}</p>
-                            
-                            </div>
-                        </div>
-                    </div>
-                </header>
-    
-          </div>
-        </div>
-        
-    
-       
-      </div>
-    -->
+
     {% endblock header %}
     {% block content %}
 <section>
