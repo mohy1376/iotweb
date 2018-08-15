@@ -25,7 +25,10 @@ class UserFormView(View):
         return render (request,self.template_name,{'form':form})
 
     def post(self,request):
+
         form = self.form_class(request.POST)
+
+        #login part
         if request.POST.get("username1"):
             #return HttpResponse("Hello. It is a test")
             username =  request.POST.get("username1")
@@ -35,7 +38,8 @@ class UserFormView(View):
                 if user.is_active:
                     login(request,user)
                     return redirect('/')
-
+        
+        #signup part
         if request.POST.get("username"):
             if form.is_valid():
                 user = form.save(commit=False)
