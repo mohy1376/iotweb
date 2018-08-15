@@ -141,7 +141,8 @@ INSTALLED_APPS = (
     'djangocms_video',
     'aldryn_style',
     'aldryn_bootstrap3',
-    'mysite'
+    'mysite',
+    'iot'
 
 )
 
@@ -172,12 +173,7 @@ CMS_LANGUAGES = {
             'fallbacks': ['fa', 'fr'],
             'public': True,
         },
-        {
-            'code': 'fr',
-            'name': gettext('French'),
-            'public': True, 
-
-        },
+        
     ],
     
     
@@ -197,6 +193,14 @@ CMS_TEMPLATES = (
     ('articles.html','Articles'),
     ('work.html','Work'),
     ('events.html','Event'),
+    ('about.html','About'),
+    ('smarthome.html','smarthome'),
+    ('smartcity.html','smartcity'),
+    ('security.html','Security'),
+    ('industry.html','Industry'),
+    ('wiki.html','Wiki'),
+    ('media.html','Media'),
+
     
 
 )
@@ -227,3 +231,5 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters'
 )
+
+LOGIN_REDIRECT_URL = '/'

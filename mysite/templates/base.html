@@ -1,7 +1,7 @@
 {% load cms_tags menu_tags sekizai_tags staticfiles %}
 
 <!DOCTYPE html>
-<html lang="{{LANGUAGE_CODE}}">
+<html  lang="{{LANGUAGE_CODE}}">
 
   <head>
 
@@ -13,6 +13,7 @@
     <title>{% page_attribute 'page_title' %} - IOT Department</title>
 
     <!-- Bootstrap core CSS -->
+    <link rel="icon" href="{% static 'img/logo2.png' %}" type="image/x-icon" />
     <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
@@ -27,38 +28,10 @@
    {% render_block "css" %}
   </head>
 
-  <body id="page-top">
+  <body class="cursor" id="page-top">
    {% cms_toolbar %}
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="nav-link nav-item dropdown">
-            <a href="#" class="language dropdown-toggle nav-link" data-toggle="dropdown">فا/En <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-                      <li class="nav-link nav-item">
-                          <a class="nav-link language " href="/fa">
-                            فارسی
-                          </a>
-                      </li>
-                      <li class="nav-link nav-item">
-                        <a href="/en" class="nav-link language">
-                        English
-                        </a>
-                      </li>
-          </ul>
-        </div>
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">دپارتمان اینترنت چیز ها</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-
-          <ul class="navbar-nav ml-auto  ">
-              {% show_menu 0 100 100 100 "menu/menu.html" %}
-          </ul>
-        </div>
-      </div>
-    </nav>
+   
+    {% block nav %}{% endblock %}
 
 
     {% block header %} {% endblock %}
@@ -69,10 +42,89 @@
 
 
 
-    
-         <footer>
-       {% static_placeholder "Footer" %}
-         </footer>
+        <footer>
+          <section class="bg-navy text-white">
+            <div class="footerlink rtl container text-center"> 
+                صفحات اجتماعی ما :
+              <a class="ml-1 mr-1" href="/">  
+              <i class="fa fa-github text-white"></i>
+              </a>
+              <a class="ml-1 mr-1" href="/">  
+                <i class="fa fa-twitter text-white"></i>
+              </a>
+              <a class="ml-1 mr-1" href="/">  
+                <i class="fa fa-telegram text-white"></i>
+              </a>
+              <a class="ml-1 mr-1"  href="/">  
+                <i class="fa fa-linkedin text-white"></i>
+              </a>
+           
+            </div>
+            <div class="container text-center text-md-right mt-5">
+            <div class="fontfooter rtl row mt-3">
+              <div class="  col-md-3 col-lg-3 col-xl-3 mb-4">
+                <h6>لینک های مفید </h6>
+                <hr class=" hr-color mb-4 mt-0 d-inline-block mx-auto">
+                <p><a href="http://catui.ir/">catui</a></p>
+                <p><a href="">link1</a></p>
+                <p><a href="">link1</a></p>
+                <p><a href="">link1</a></p>
+                <p><a href="">link1</a></p>
+              </div>
+              <div class="col-md-2 col-lg-2 col-xl-2  mb-4">       
+                         <h6>دسترسی سریع</h6>
+                <hr class="hr-color mb-4 mt-0 d-inline-block mx-auto">
+                <div class="footerelements">
+                  <p><a href="/">صفحه اصلی</a></p>
+                  <p><a href="/accounts/">ورود/ ثبت نام</a></p>
+                  <p><a href="">آخرین اخبار</a></p>
+                  <p><a href="">مطالب پربازدید</a></p>
+                </div>
+                
+
+              </div>
+              <div class="col-md-3 col-lg-3 col-xl-3 mb-4"> 
+                               <h6>ارتباط با ما</h6>
+                <hr class="hr-color mb-4 mt-0 d-inline-block mx-auto">
+                <div class="footerelements">
+                  <address>
+                      نشانی: 
+                  </br>
+                  ساختمان ۲ مرکز رشد خواجه نصیر
+                  </br>
+                      تلفن: 
+                  </br>
+                      ایمیل:
+                  </br>
+                  </address>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-3">     
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eos fuga nesciunt voluptatem soluta totam sit beatae ullam doloribus nam, error quos animi ab, inventore nemo? Suscipit facilis nobis error.
+                </p>
+              </div>
+           
+           
+            </div>
+
+          </div>
+            <div class="text-white  row bg-navy2"> <div class="col-lg-12">
+              <div class="container text-center mt-3 mb-3 copyright"> All content copyright IOT Department &copy; 2018 • All rights reserved.
+                <br>
+                Designed by Karaco
+                <br>
+                <a href=""> Term of Use</a> - <a href=""> Privacy and Policy </a>
+              </div>
+
+
+            </div> </div>
+
+            
+          </section>
+
+
+        </footer>
 
 
 
@@ -91,7 +143,16 @@
 
     <!-- Custom scripts for this template -->
     <script src="{% static "js/creative.min.js" %}"></script>
-     {% render_block "js" %}
+    <script src="{% static "js/jquery-3.3.1.min.js" %}"></script>
+
+    <script> 
+        $(document).ready(function() {
+          $('#mainNav').load("{% static 'template/jmenu.html' %}");
+      });
+    </script>
+
+    
+
   </body>
 
 </html>

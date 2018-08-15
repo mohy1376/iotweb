@@ -1,0 +1,66 @@
+
+ 
+    {% extends "base.html" %}
+    {% load cms_tags staticfiles %}
+    
+    {% block title %}{% page_attribute "page_title" %}  {% endblock title %}
+    
+    
+    {% block nav %}
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    
+        </nav>
+    
+    {% endblock %}
+    
+    
+    
+    
+    {% block header %}
+
+    <header class="masthead signupheader text-center text-white d-flex"></header>
+
+
+    {% endblock header %}
+    {% block content %}
+
+<section>
+    <div class="row">
+        <div  class="col-lg-6 col-md-6 col-xs-12">
+            <form action="" method="POST" >
+                {% csrf_token %}
+                <fieldset class="text-center">
+                    <legend>:حساب جدید بسازید</legend>
+                    <br> :نام کاربری<br>
+                    <input type="text" name="username" required>
+                    <br> :رمز عبور<br>
+                    <input type="password" name="password" required>
+                    <br> :ایمیل <br>
+                    <input type="email" name="email">
+                    <br><br>
+                    <input type="reset" value="بازنشانی">
+                    <input type="submit" value="ثبت نام">
+                </fieldset>
+            </form>
+        </div>
+        <div class="col-lg-6 col-md-6 col-xs-12">
+            <form action="" method="POST" >
+                {% csrf_token %}
+                <fieldset class="text-center">
+                    <legend>:وارد حساب خود شوید</legend>
+                    <br> :نام کاربری<br>
+                    <input type="text" name="username1" required>
+                    <br> :رمز عبور<br>
+                    <input type="password" name="password1" required>
+                    <br><br>
+                    <input type="reset" value="بازنشانی">
+                    <input type="submit" value="ورود">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</section>
+
+    
+
+{% endblock content%}

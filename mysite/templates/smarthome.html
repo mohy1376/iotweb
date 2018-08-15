@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load cms_tags staticfiles %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block nav %}
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+
+	</nav>
+{% endblock %}
+
+
+
+{% block header %}
+<header class="jumbotron"></header>
+{% endblock header %}
+
+
+
+{% block content %}
+ {% placeholder contentNewsPage  %}
+{% endblock content %}

@@ -15,10 +15,12 @@ admin.autodiscover()
 urlpatterns = [
     url(r'^sitemap\.xml$', sitemap,
         {'sitemaps': {'cmspages': CMSSitemap}}),
+      #  url(r'^', include('iot.urls')),
 ]
 
 urlpatterns += i18n_patterns(
     url(r'^admin/', include(admin.site.urls)),  # NOQA
+    url(r'^', include('iot.urls', namespace='iot')),
     url(r'^', include('cms.urls')),
 )
 
