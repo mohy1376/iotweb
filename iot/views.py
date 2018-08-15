@@ -26,22 +26,30 @@ class UserFormView(View):
 
     def post(self,request):
         form = self.form_class(request.POST)
-        
-        if form.is_valid():
-            
-            user = form.save(commit=False)
-            username =  form.cleaned_data['username']
-            password =  form.cleaned_data['password']
-            user.set_password(password)
-            user.save()
-
-
+        if request.POST.get("username1"):
+            #return HttpResponse("Hello. It is a test")
+            username =  request.POST.get("username1")
+            password =  request.POST.get("password1")
             user = authenticate(username=username,password=password)
-
             if user is not None:
                 if user.is_active:
                     login(request,user)
                     return redirect('/')
 
-        
+        if request.POST.get("username"):
+            if form.is_valid():
+                user = form.save(commit=False)
+                username =  form.cleaned_data['username']
+                password =  form.cleaned_data['password']
+                user.set_password(password)
+                user.save()
+
+
+                user = authenticate(username=username,password=password)
+
+                if user is not None:
+                    if user.is_active:
+                        login(request,user)
+                        return redirect('/')
+
         return render (request,self.template_name,{'form':form})

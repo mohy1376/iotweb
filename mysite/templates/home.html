@@ -120,6 +120,9 @@
 
 {% block content  %}
 
+{% if user.is_authenticated %}
+  Hi {{ user.username }}!
+  {% endif %}
 <!-- news -->
 <section id="news" class="text-white bg-news">
 		<div class="container">
