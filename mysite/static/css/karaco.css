@@ -248,7 +248,7 @@ Footer h6{
     background-color: #283a41;
 }
 .bg-wiki{
-    background-color: #037a3f;
+    background-color: darkorange;
 }
 #events h3, h2 {
     font-family:BRoya;
@@ -264,13 +264,14 @@ Footer h6{
     border-color: antiquewhite;
 }
 
-#news .col-md-4,#news .col-lg-4,#news .col-xs-12 {
+
+.spacer {
     border: solid;
     border-color: #9d9d9d;
     background-color: whitesmoke;
     border-radius: 20px;
     min-height: 200px;
-    margin-bottom: 20px;
+    margin: 0px 0px 20px 0px;
 }
 .newsheader{
     background-image: url("../img/5.jpg");
