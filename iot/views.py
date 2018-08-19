@@ -34,8 +34,6 @@ class UserFormView(View):
 
     def post(self,request):
 
-        form = self.form_class(request.POST)
-
         #login part
         if request.POST.get("username1"):
             username =  request.POST.get("username1")
@@ -47,6 +45,9 @@ class UserFormView(View):
                     return redirect('/')
         
         #signup part
+
+        form = self.form_class(request.POST)
+
         if request.POST.get("username"):
             if form.is_valid():
                 user = form.save(commit=False)

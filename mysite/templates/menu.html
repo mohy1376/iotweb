@@ -76,11 +76,13 @@
                 </li>
                 <li  class="nav-item nav-link" >
                     {% if user.is_authenticated %}
-                     User: {{ user.username }}
-                    <p><a href="/fa/logout">خروج</a></p>
+                    <p  class="rtl">
+                        کاربر:  {{ user.username }}
+                    </p>
+                    <a href="/fa/logout">خروج</a>
                     {% else %}
-                    <p class="rtl" style="font-size: 12px">به حساب خود وارد نشده‌اید!</p>
-                    <a href="/fa/accounts">ورود</a>
+                    <a href="/fa/accounts" class="nav-link js-scroll-trigger" style="font-size: 11px">به حساب خود وارد شوید</a>
+                    
                     {% endif %}
                 </li>
     
