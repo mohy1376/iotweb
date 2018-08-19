@@ -143,7 +143,7 @@ INSTALLED_APPS = (
     'aldryn_bootstrap3',
     'mysite',
     'iot',
-    #'app',
+   #'mysite.app.news',
 
 )
 
