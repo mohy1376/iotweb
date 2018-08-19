@@ -74,13 +74,13 @@
                 <li class="nav-item nav-link">
                         <a href="/fa/khbr" class="nav-link js-scroll-trigger">اخبار</a>
                 </li>
-                <li  class="nav-item nav-link">
+                <li  class="nav-item nav-link" >
                     {% if user.is_authenticated %}
-                     سلام {{ user.username }}!
-                    <p><a href="/fa/logout">logout</a></p>
+                     User: {{ user.username }}
+                    <p><a href="/fa/logout">خروج</a></p>
                     {% else %}
-                    <p>You are not logged in</p>
-                    <a href="/fa/accounts">login</a>
+                    <p class="rtl" style="font-size: 12px">به حساب خود وارد نشده‌اید!</p>
+                    <a href="/fa/accounts">ورود</a>
                     {% endif %}
                 </li>
     
