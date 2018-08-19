@@ -12,9 +12,17 @@ from django.views.generic.edit import CreateView,UpdateView,DeleteView
 from django.http import HttpResponse
 
 from .forms import UserForm
+
+from django.contrib.auth import logout
+
 # Create your views here.
+
+def logout_view(request):
+    logout(request)
+    return redirect('/')
+
 def index(request):
-     return HttpResponse("Hello. It is a test")
+    return HttpResponse("Hello. It is a test")
      
 class UserFormView(View):
     form_class = UserForm
@@ -30,7 +38,6 @@ class UserFormView(View):
 
         #login part
         if request.POST.get("username1"):
-            #return HttpResponse("Hello. It is a test")
             username =  request.POST.get("username1")
             password =  request.POST.get("password1")
             user = authenticate(username=username,password=password)
