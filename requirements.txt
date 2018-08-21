@@ -11,6 +11,8 @@ django-formtools==2.1
 django-mptt==0.8.7
 django-polymorphic==2.0.2
 django-sekizai==0.10.0
+django-taggit==0.23.0
+django-taggit-autosuggest==0.3.3
 django-treebeard==4.3
 djangocms-admin-style==1.2.8
 djangocms-attributes-field==0.3.0
@@ -21,6 +23,7 @@ djangocms-googlemap==1.1.1
 djangocms-icon==1.0.0
 djangocms-installer==1.0.1
 djangocms-link==2.1.2
+djangocms-page-tags==0.6.1
 djangocms-picture==2.0.6
 djangocms-snippet==2.0.0
 djangocms-style==2.0.2
