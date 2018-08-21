@@ -405,4 +405,35 @@ body {
 
 font-family: BRoya;
 }
+.login{
+    font-size: 11px;
+}
+.loginicon{
+    margin-left:5px;
+}
+.dropdown-toggle::after {
 
+    vertical-align: 0px;
+}
+#mainNav .navbar-nav > li.nav-item > a.login, #mainNav .navbar-nav > li.nav-item > a.login:focus {
+    font-size: 80%;
+    padding-top: 14px;
+}
+.english{
+    font-family: monospace;
+}
+.user{
+    font-size: 10px;
+    font-weight: normal;
+    text-transform: none;
+}
+#mainNav .navbar-nav > li.nav-item > a.logout, #mainNav .navbar-nav > li.nav-item > a.logout:focus {
+    font-size: 10px;
+    padding-top: 0px;
+}
+
+.username{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: white;
+}
