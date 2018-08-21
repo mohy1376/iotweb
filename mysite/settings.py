@@ -144,6 +144,9 @@ INSTALLED_APPS = (
     'mysite',
     'iot',
     'mysite.app.news',
+    'taggit',
+    'taggit_autosuggest',
+    'djangocms_page_tags',
 
 )
 
