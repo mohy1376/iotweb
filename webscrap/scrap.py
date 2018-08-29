@@ -1,12 +1,14 @@
+#scrap the saved page and save it in .csv file
+
 from bs4 import BeautifulSoup
 import csv
 
-with open('sel.html') as html_file :
+with open('webscrap/sel.html') as html_file :
 
     soup = BeautifulSoup( html_file , 'lxml')
 
 
-csv_file = open('news.csv', 'w')
+csv_file = open('webscrap/news.csv', 'w')
 csv_writer = csv.writer(csv_file)
 csv_writer.writerow(['title','summary','img_src'])
 
