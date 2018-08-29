@@ -1,26 +1,69 @@
 
-		<div class="container">
-
-                <a class="navbar-brand" href="/">	<img class="logo navbar-brand" src="../../../static/img/logo3.jpg" alt="faild">دپارتمان اینترنت اشیاء</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
+
+
+
+
+             <div class="collapse navbar-collapse " id="navbarResponsive">
         
-                <ul class="navbar-nav ml-auto  ">
+                <ul class="navbar-nav" >
+
+
+                    <li  class="nav-item nav-link mx-auto" >
+                        {% if user.is_authenticated %}
+                        <p  class="username nav-link rtl mx-auto">
+                            کاربر : <a href="/" class="user english">{{ user.username }}</a> 
+                        </p>
+                        <a href="/fa/logout" class="nav-link logout mx-auto" >خروج</a>
+                        {% else %}
+                        <a href="/fa/accounts" class="login nav-link rtl mx-auto" > <i class="loginicon fa fas fa-user"></i> وارد حساب خود شوید   </a>
+                        
+                        {% endif %}
+                    </li>
+        
+        
+                
+                    
+                         <!--    <li class="nav-item nav-link dropdown">
+                            <a href="#" class="language dropdown-toggle nav-link" data-toggle="dropdown">فا/En <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                        <li class="nav-link nav-item">
+                                            <a class="nav-link language " href="/fa">
+                                            فارسی
+                                            </a>
+                                        </li>
+                                        <li class="nav-link nav-item">
+                                        <a href="/en" class="nav-link language">
+                                        English
+                                        </a>
+                                        </li>
+                            </ul>
+                         
+                        </li> -->
+
+
+                    </ul>
+
+
+
+
+
+                <ul class="navbar-nav mx-auto ">
     
-            <li class="nav-item nav-link">
-                <a href="/fa/drbrh-m" class="nav-link js-scroll-trigger">درباره ی ما</a>
-            </li>
+               <li class="nav-item nav-link mx-auto">
+                    <a href="/fa/drbrh-m" class="nav-link js-scroll-trigger">درباره ی ما</a>
+               </li>
     
     
-            <li class="nav-item nav-link">
+                <li class="nav-item nav-link mx-auto">
                 <a href="/fa/hmr-b-m" class="nav-link js-scroll-trigger">همکاری با ما</a>
-            </li>
+                 </li>
     
     
         
-            <li class="rtl nav-item nav-link dropdown">
+            <li class="rtl nav-item nav-link dropdown mx-auto">
                 <a href="#" class="language dropdown-toggle nav-link" data-toggle="dropdown">دسته بندی <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                                 <li class="nav-link nav-item">
@@ -48,66 +91,44 @@
                 </li>
     
     
-                <li class="nav-item nav-link">
+                <li class="nav-item nav-link mx-auto">
                         <a href="/fa/media" class="nav-link js-scroll-trigger">مدیا</a>
                     </li>
     
     
     
-                <li class="nav-item nav-link">
+                <li class="nav-item nav-link mx-auto">
                         <a href="/fa/dnshnmh" class="nav-link js-scroll-trigger">دانشنامه</a>
                     </li>
     
     
-                <li class="nav-item nav-link">
+                <li class="nav-item nav-link mx-auto">
                         <a href="/fa/events" class="nav-link js-scroll-trigger">رویدادها</a>
                     </li>
             
     
     
-                <li class="nav-item nav-link">
+                <li class="nav-item nav-link mx-auto">
                         <a href="/fa/articles" class="nav-link js-scroll-trigger">مقالات</a>
                     </li>
     
     
     
-                <li class="nav-item nav-link">
+                <li class="nav-item nav-link mx-auto">
                         <a href="/fa/khbr" class="nav-link js-scroll-trigger">اخبار</a>
                 </li>
-                <li  class="nav-item nav-link" >
-                    {% if user.is_authenticated %}
-                    <p  class="username nav-link rtl">
-                        کاربر : <a href="/" class="user english">{{ user.username }}</a> 
-                    </p>
-                    <a href="/fa/logout" class="nav-link logout" >خروج</a>
-                    {% else %}
-                    <a href="/fa/accounts" class="login nav-link rtl " > <i class="loginicon fa fas fa-user"></i> وارد حساب خود شوید   </a>
-                    
-                    {% endif %}
-                </li>
-    
-    
-            
-                
-                <!--    <li class="nav-item nav-link dropdown">
-                        <a href="#" class="language dropdown-toggle nav-link" data-toggle="dropdown">فا/En <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                                    <li class="nav-link nav-item">
-                                        <a class="nav-link language " href="/fa">
-                                        فارسی
-                                        </a>
-                                    </li>
-                                    <li class="nav-link nav-item">
-                                    <a href="/en" class="nav-link language">
-                                    English
-                                    </a>
-                                    </li>
-                        </ul>
-                     
-                    </li> -->
+
                 </ul>
+              
                 </div>
-        </div>
+
+                <a class="navbar-brand mx-auto" href="/">
+                
+                    دپارتمان اینترنت اشیاء
+
+                    <img class="logo navbar-brand" src="../../../static/img/logo3.jpg" alt="faild">
+                 </a>
+    
     
       
     

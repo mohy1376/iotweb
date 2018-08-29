@@ -434,3 +434,8 @@ font-family: BRoya;
     padding-bottom: 0px;
     color: white;
 }
+
+#navbarResponsive {
+    overflow-y: scroll !important;
+    max-height: 500px !important;
+}
