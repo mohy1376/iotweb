@@ -238,14 +238,11 @@ Footer h6{
 .footerlink{
     font-family: monospace;
 }
-.bg-events{
-    background-color: #f0a800;
+.bg-siyah{
+    background-color: #1b1915;
 }
-.bg-news{
-    background-color: #326363;
-}
-.bg-articles{
-    background-color: #283a41;
+.bg-sefid{
+    background-color: #ffffff;
 }
 .bg-wiki{
     background-color: darkorange;
@@ -269,7 +266,7 @@ Footer h6{
     border: solid;
     border-color: #9d9d9d;
     background-color: whitesmoke;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
     min-height: 200px;
     margin: 0px 0px 20px 0px;
 }
