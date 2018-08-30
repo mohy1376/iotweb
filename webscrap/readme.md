@@ -1,0 +1,1 @@
+copy geckodriver to /usr/bin and /usr/local/bin
