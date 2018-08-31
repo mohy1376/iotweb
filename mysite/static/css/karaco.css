@@ -445,7 +445,7 @@ font-family: BRoya;
   }
 
 .collapse {
-    display: none;
+    /* display: none; */
 }
 .glyphicon {
     position: relative;
