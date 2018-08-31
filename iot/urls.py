@@ -4,5 +4,5 @@ app_name = "iot"
 urlpatterns = [
     url(r'^index/', views.index, name='index'),
     url(r'^accounts/', views.UserFormView.as_view(), name='accounts'),
-    url(r'^logout/', views.logout_view, name='logout')
+    url(r'^logout/', views.logout_view, name='logout'),
 ]
