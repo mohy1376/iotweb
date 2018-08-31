@@ -15,6 +15,7 @@ from .forms import UserForm
 
 from django.contrib.auth import logout
 
+from .models import comment
 # Create your views here.
 
 def logout_view(request):
@@ -65,3 +66,18 @@ class UserFormView(View):
                         return redirect('/')
 
         return render (request,self.template_name,{'form':form})
+
+
+class about(View):
+    template_name = 'about.html'
+
+    def get(self,request):
+        return render (request,self.template_name)
+
+    def post(self,request):
+        text =  request.POST.get("comments")
+        name =  request.POST.get("name")
+        email = request.POST.get("email")
+        newComment = comment(text=text,name=name,email=email)
+        newComment.save()
+        return redirect('/')
