@@ -173,7 +173,7 @@ header.masthead2 {
 
 }
 header.masthead1 {
-    background-image: url("../img/3.jpg");
+    background-image: url("../img/20.jpg");
 
 }
 header.masthead3 {
@@ -235,6 +235,9 @@ footer > section {
 Footer h6{
     font-family: BRoya;
     font-size: 140%;
+}
+footer > section > div:nth-child(3) a ,footer > section > div:nth-child(3) > div > div >  p {
+    font-family: monospace;
 }
 .footerlink{
     font-family: monospace;
@@ -437,8 +440,11 @@ font-family: BRoya;
 }
 
 #navbarResponsive {
-    overflow-y: scroll !important;
-    max-height: 500px !important;
+    height: 600px;
+    max-height: 600px;
+    width: 100%;
+    overflow-y: scroll;
+    
 }
 
 .img-circle {
