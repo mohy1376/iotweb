@@ -12,17 +12,11 @@
       margin-bottom: 0px;
   }
 
-  @font-face {
+@font-face {
     font-family: 'BTehran';
     src: url('../fonts/BTehran.eot?#') format('eot'),  /* IE6–8 */
          url('../fonts/BTehran.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
          url('../fonts/BTehran.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
-    }
- @font-face {
-      font-family: 'BMorvarid';
-      src: url('../fonts/BMorvarid.eot?#') format('eot'),  /* IE6–8 */
-           url('../fonts/BMorvarid.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-           url('../fonts/BMorvarid.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
     }
 @font-face {
         font-family: 'BRoya';
@@ -42,7 +36,14 @@
              url('../fonts/BYekan.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
              url('../fonts/BYekan.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
       }
-
+@font-face {
+        font-family: 'Iransans';
+        src: url('../fonts/iransans.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+      }
+@font-face {
+        font-family: 'Iraniansans';
+        src: url('../fonts/iraniansans.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+      }
 
 
 .dropdown:hover>.dropdown-menu {
@@ -172,7 +173,7 @@ header.masthead2 {
 
 }
 header.masthead1 {
-    background-image: url("../img/3.jpg");
+    background-image: url("../img/20.jpg");
 
 }
 header.masthead3 {
@@ -234,6 +235,9 @@ footer > section {
 Footer h6{
     font-family: BRoya;
     font-size: 140%;
+}
+footer > section > div:nth-child(3) a ,footer > section > div:nth-child(3) > div > div >  p {
+    font-family: monospace;
 }
 .footerlink{
     font-family: monospace;
@@ -436,17 +440,18 @@ font-family: BRoya;
 }
 
 #navbarResponsive {
-    overflow-y: scroll !important;
-    max-height: 500px !important;
+    height: 600px;
+    max-height: 600px;
+    width: 100%;
+    overflow-y: scroll;
+    
 }
 
 .img-circle {
     border-radius: 50%;
   }
 
-.collapse {
-    /* display: none; */
-}
+
 .glyphicon {
     position: relative;
     top: 1px;

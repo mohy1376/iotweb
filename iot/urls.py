@@ -5,5 +5,5 @@ urlpatterns = [
     url(r'^index/', views.index, name='index'),
     url(r'^accounts/', views.UserFormView.as_view(), name='accounts'),
     url(r'^logout/', views.logout_view, name='logout'),
-    url(r'^drbrh-m/', views.about.as_view(), name='about'),
+    url(r'^about/', views.about.as_view(), name='about'),
 ]
