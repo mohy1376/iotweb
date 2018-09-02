@@ -12,17 +12,11 @@
       margin-bottom: 0px;
   }
 
-  @font-face {
+@font-face {
     font-family: 'BTehran';
     src: url('../fonts/BTehran.eot?#') format('eot'),  /* IE6–8 */
          url('../fonts/BTehran.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
          url('../fonts/BTehran.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
-    }
- @font-face {
-      font-family: 'BMorvarid';
-      src: url('../fonts/BMorvarid.eot?#') format('eot'),  /* IE6–8 */
-           url('../fonts/BMorvarid.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-           url('../fonts/BMorvarid.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
     }
 @font-face {
         font-family: 'BRoya';
@@ -42,7 +36,14 @@
              url('../fonts/BYekan.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
              url('../fonts/BYekan.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
       }
-
+@font-face {
+        font-family: 'Iransans';
+        src: url('../fonts/iransans.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+      }
+@font-face {
+        font-family: 'Iraniansans';
+        src: url('../fonts/iraniansans.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+      }
 
 
 .dropdown:hover>.dropdown-menu {
@@ -444,9 +445,7 @@ font-family: BRoya;
     border-radius: 50%;
   }
 
-.collapse {
-    /* display: none; */
-}
+
 .glyphicon {
     position: relative;
     top: 1px;
