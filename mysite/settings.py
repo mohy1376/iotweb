@@ -142,7 +142,11 @@ INSTALLED_APPS = (
     'aldryn_style',
     'aldryn_bootstrap3',
     'mysite',
-    'iot'
+    'iot',
+    'mysite.app.news',
+    'taggit',
+    'taggit_autosuggest',
+    'djangocms_page_tags',
 
 )
 

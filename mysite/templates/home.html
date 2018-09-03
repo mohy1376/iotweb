@@ -1,34 +1,25 @@
-{% extends "base.html" %}
-{% load cms_tags menu_tags sekizai_tags  staticfiles %}
+{% extends "base.html" %} {% load cms_tags menu_tags sekizai_tags staticfiles %} {% block title %}{% page_attribute "page_title"
+%}{% endblock title %} {% block nav %}
 
-{% block title %}{% page_attribute "page_title" %}{% endblock title %}
-
-
-
-{% block nav %}
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-	
+<nav class="navbar navbar-expand-lg navbar-light fixed-top rtl" id="mainNav">
+	{% include "menu.html" %}
 </nav>
 
-{% endblock %}
-
-
-
-
-{% block header %}
+{% endblock %} {% block header %}
 <div id="demo" class="carousel carousel-fade slide" data-ride="carousel" data-pause="false">
+
 	<ul class="carousel-indicators">
 		<li data-target="#demo" data-slide-to="0" class="active"></li>
+		<!--
 		<li data-target="#demo" data-slide-to="1"></li>
 		<li data-target="#demo" data-slide-to="2"></li>
-		<li data-target="#demo" data-slide-to="3"></li>
-		
-	  </ul>
-	
+		<li data-target="#demo" data-slide-to="3"></li> -->
+	</ul>
+
 	<div class="carousel-inner">
-	  <div class="carousel-item active">		
+		<div class="carousel-item active">
 			<header class="masthead masthead1 text-center text-white d-flex">
-			  
+
 				<div class="container my-auto">
 					<div class="row">
 						<div class="col-lg-10 mx-auto">
@@ -45,7 +36,8 @@
 				</div>
 			</header>
 
-	  </div> 
+		</div>
+		<!--
 	  <div class="carousel-item ">
 			<header class=" masthead masthead2 text-center text-white d-flex">
 				<div class="container my-auto">
@@ -69,8 +61,8 @@
 
 
 		<header class="masthead3 masthead text-center text-white d-flex">
-			
-		
+
+
 
 			<div class="container my-auto">
 				<div class="row">
@@ -106,219 +98,187 @@
 				</div>
 			</header>
 
-	  </div>
+	  </div> -->
 	</div>
-	
-
-   
-  </div>
-
-{% endblock header %}
 
 
 
-
-{% block content  %}
-
-{% if user.is_authenticated %}
-  Hi {{ user.username }}!
-  {% endif %}
-<!-- news -->
-<section id="news" class="text-white bg-news">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<h2 class="section-heading">آخرین اخبار روز اینترنت اشیاء‌ در ایران و دنیا</h2>
-					<hr class="my-4">
-				</div>
-			</div>
-		</div>
-		<div class="rtl text-center tozihat">
-			خبرهای  اینترنت اشیا ایران و جهان را از اینجا پیگیری کنید و از  تازه‌های این حوزه باخبر شوید.
-		</div>
-	</br>
-		<div class="text-center container ">
-
-					<div class="row text-white">
-						<div class="col-lg-4 col-md-4 col-xs-12">
-								
-						</div>
-						<div class="col-lg-4 col-md-4 col-xs-12">
-								
-						</div>
-						<div class="col-lg-4 col-md-4 col-xs-12">
-								
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-4 col-md-4 col-xs-12">
-								
-						</div>
-						<div class="col-lg-4 col-md-4 col-xs-12">
-								
-						</div>
-						<div class="col-lg-4 col-md-4 col-xs-12">
-								
-						</div>
-					</div>
 </div>
+
+{% endblock header %} {% block content %}
+
+<!-- news -->
+<section id="news" class="text-white bg-dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2 class="section-heading">آخرین اخبار روز اینترنت اشیاء‌ در ایران و دنیا</h2>
+				<hr class="my-4">
+			</div>
+		</div>
+	</div>
+	<div class="rtl text-center tozihat">
+		خبرهای اینترنت اشیا ایران و جهان را از اینجا پیگیری کنید و از تازه‌های این حوزه باخبر شوید.
+	</div>
+	</br>
+	<div class="text-center container ">
+
+		<div class="row text-white">
+			<div class="col-lg-4 col-md-4 col-xs-12 ">
+				<div class="spacer"></div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-xs-12 ">
+				<div class="spacer"></div>
+
+			</div>
+			<div class="col-lg-4 col-md-4 col-xs-12 ">
+				<div class="spacer"></div>
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-xs-12 ">
+				<div class="spacer"></div>
+
+			</div>
+			<div class="col-lg-4 col-md-4 col-xs-12 ">
+				<div class="spacer"></div>
+
+			</div>
+			<div class="col-lg-4 col-md-4 col-xs-12 ">
+				<div class="spacer"></div>
+
+			</div>
+		</div>
+	</div>
 </section>
-	
-	<!-- articles -->
-	<section id="services" class="bg-articles">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<h2 class="section-heading text-white">مقالات</h2>
-						<hr class="my-4">
-					</div>
-				</div>
+
+<!-- articles -->
+<section id="services" class="bg-sefid text-black">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2 class="section-heading ">مقالات</h2>
+				<hr class="my-4">
 			</div>
-			<div class="rtl text-center tozihat text-white">
-					هر روزه، مقالات زیادی در حوزه‌ی اینترنت اشیا (IOT)منتشر می‌شود.
-			</br>
-					 این مقالات یا برای عموم مردم چاپ‌می‌شوند تا آن‌ها را با این فناوری آشنا کنند یا برای متخصصان به بررسی دقیق و موردی اینترنت اشیا می‌پردازند.
-					</br>
-					 ما می‌کوشیم نیاز‌های هر دو گروه را با ایجاد دسترسی به بهترین و به‌روز ترین مقالات دنیا برطرف کنیم.	
-				</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-md-6 text-center">
-						<div class="service-box mt-5 mx-auto">
-							<i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
-							<h3 class="mb-3">Sturdy Templates</h3>
-							<p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 text-center">
-						<div class="service-box mt-5 mx-auto">
-							<i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
-							<h3 class="mb-3">Ready to Ship</h3>
-							<p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 text-center">
-						<div class="service-box mt-5 mx-auto">
-							<i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
-							<h3 class="mb-3">Up to Date</h3>
-							<p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 text-center">
-						<div class="service-box mt-5 mx-auto">
-							<i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
-							<h3 class="mb-3">Made with Love</h3>
-							<p class="text-muted mb-0">You have to make your websites with love these days!</p>
-						</div>
-					</div>
-				</div>
+		</div>
+	</div>
+	<div class="rtl text-center tozihat ">
+		هر روزه، مقالات زیادی در حوزه‌ی اینترنت اشیا (IOT)منتشر می‌شود.
+		</br>
+		این مقالات یا برای عموم مردم چاپ‌می‌شوند تا آن‌ها را با این فناوری آشنا کنند یا برای متخصصان به بررسی دقیق و موردی اینترنت
+		اشیا می‌پردازند.
+		</br>
+		ما می‌کوشیم نیاز‌های هر دو گروه را با ایجاد دسترسی به بهترین و به‌روز ترین مقالات دنیا برطرف کنیم.
+	</div>
+	</br>
+	<div class="text-center container ">
+
+		<div class="row ">
+			<div class="col-lg-4 col-md-4 col-xs-12 ">
+				<div class="spacer"></div>
 			</div>
+			<div class="col-lg-4 col-md-4 col-xs-12 ">
+				<div class="spacer"></div>
+
+			</div>
+			<div class="col-lg-4 col-md-4 col-xs-12 ">
+				<div class="spacer"></div>
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-xs-12 ">
+				<div class="spacer"></div>
+
+			</div>
+			<div class="col-lg-4 col-md-4 col-xs-12 ">
+				<div class="spacer"></div>
+
+			</div>
+			<div class="col-lg-4 col-md-4 col-xs-12 ">
+				<div class="spacer"></div>
+
+			</div>
+		</div>
+	</div>
 </section>
 
 <!-- events -->
-	<section id="events" class="bg-events">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">رویدادها</h2>
-            <hr class="my-4">
-					</div>
-					<div class="mb-3 rtl text-center container tozihat">
-						<p>
-								رویدادهای بسیاری در ایران و جهان حول اینترنت اشیا برگزار می‌شود: همایش، سخنرانی، نمایشگاه، مسابقه، کلاس‌های آموزشی و ....		
-					</br>
-							ما در زمان مناسب شما را از  آن‌ها خبردار می‌سازیم
-					</p>
-					</div>
-        </div>
-      </div>
-      <div class="container">
-        <div class=" rtl row">
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-tv text-black mb-3 sr-icons"></i>
-              <h3 class="mb-3">کارگاه های آموزشی</h3>
-              <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fas fa-users fa-4x  text-black mb-3 sr-icons"></i>
-              <h3 class="mb-3">مسابقات</h3>
-              <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-clone text-black mb-3 sr-icons"></i>
-              <h3 class="mb-3">همایش</h3>
-              <p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fab fa-free-code-camp  fa-4x fa text-black mb-3 sr-icons"></i>
-              <h3 class="mb-3">بوت کمپ</h3>
-              <p class="text-muted mb-0">You have to make your websites with love these days!</p>
-            </div>
-          </div>
-        </div>
+<section id="events" class="bg-dark text-white">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2 class="section-heading">رویدادها</h2>
+				<hr class="my-4">
 			</div>
-			<br/>
-			<br/>
-			<br/>
+			<div class="mb-3 rtl text-center container tozihat">
+				<p>
+					رویدادهای بسیاری در ایران و جهان حول اینترنت اشیا برگزار می‌شود: همایش، سخنرانی، نمایشگاه، مسابقه، کلاس‌های آموزشی و ....
+					</br>
+					ما در زمان مناسب شما را از آن‌ها خبردار می‌سازیم
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class=" rtl row">
+			<div class="col-lg-3 col-md-6 text-center">
+				<div class="service-box mt-5 mx-auto">
+					<i class="fa fa-4x fa-tv text-black mb-3 sr-icons"></i>
+					<h3 class="mb-3">کارگاه های آموزشی</h3>
+					<p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 text-center">
+				<div class="service-box mt-5 mx-auto">
+					<i class="fa fas fa-users fa-4x  text-black mb-3 sr-icons"></i>
+					<h3 class="mb-3">مسابقات</h3>
+					<p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 text-center">
+				<div class="service-box mt-5 mx-auto">
+					<i class="fa fa-4x fa-clone text-black mb-3 sr-icons"></i>
+					<h3 class="mb-3">همایش</h3>
+					<p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 text-center">
+				<div class="service-box mt-5 mx-auto">
+					<i class="fab fa-free-code-camp  fa-4x fa text-black mb-3 sr-icons"></i>
+					<h3 class="mb-3">بوت کمپ</h3>
+					<p class="text-muted mb-0">You have to make your websites with love these days!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<br/>
+	<br/>
 
-	</section>
+</section>
 
-		<!-- wiki-->
-		<section id="services" class="bg-wiki">
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-12 text-center">
-									<h2 class="section-heading">دانشنامه</h2>
-									<hr class="my-4">
-								</div>
-							</div>
-						</div>
-						<div class="rtl text-center tozihat text-black">
-								هر فناوری یا علم جدیدی که به روند جهانی تبدیل می‌شود، آدم‌های زیادی شروع می‌کنند راجع به آن صحبت کردن. اما چقدر این حرف‌ها دقیق و بر مبنای علمی است؟				
-									</br>
-									اصلا تعریف دقیق اصطلاحاتی که در حد اطلاعاتمان از آن‌ها نام می‌بریم، چیست؟				
-												</br>
-												اینجا قرار است همین کار را، گام به گام، انجام دهیم. تا وقتی مثلا از شبکه‌ی لورا حرف می‌زنیم یا از Sass می‌گوییم، حرفمان علمی و دارای تعریف واحد باشد. 
-						</div>
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-3 col-md-6 text-center">
-									<div class="service-box mt-5 mx-auto">
-										<i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
-										<h3 class="mb-3">Sturdy Templates</h3>
-										<p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
-									</div>
-								</div>
-								<div class="col-lg-3 col-md-6 text-center">
-									<div class="service-box mt-5 mx-auto">
-										<i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
-										<h3 class="mb-3">Ready to Ship</h3>
-										<p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
-									</div>
-								</div>
-								<div class="col-lg-3 col-md-6 text-center">
-									<div class="service-box mt-5 mx-auto">
-										<i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
-										<h3 class="mb-3">Up to Date</h3>
-										<p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
-									</div>
-								</div>
-								<div class="col-lg-3 col-md-6 text-center">
-									<div class="service-box mt-5 mx-auto">
-										<i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
-										<h3 class="mb-3">Made with Love</h3>
-										<p class="text-muted mb-0">You have to make your websites with love these days!</p>
-									</div>
-								</div>
-							</div>
-						</div>
-		</section>
-	
+<!-- wiki-->
+<section id="services" class="bg-sefid text-black">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2 class="section-heading">دانشنامه</h2>
+				<hr class="my-4">
+			</div>
+		</div>
+	</div>
+	<div class="rtl text-center tozihat">
+		هر فناوری یا علم جدیدی که به روند جهانی تبدیل می‌شود، افراد بسیاری شروع می‌کنند راجع به آن صحبت کردن. اما چقدر این حرف‌ها
+		دقیق و بر مبنای علمی است؟
+		</br>
+		اصلا تعریف دقیق اصطلاحاتی که در حد اطلاعاتمان از آن‌ها نام می‌بریم، چیست؟
+		</br>
+		اینجا قرار است همین کار را، گام به گام، انجام دهیم. تا وقتی مثلا از شبکه‌ی لورا حرف می‌زنیم یا از Sass می‌گوییم، حرفمان علمی
+		و دارای تعریف واحد باشد.
+	</div>
+
+</section>
+
 {% endblock content %}

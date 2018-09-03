@@ -10,8 +10,8 @@
 
 
 {% block nav %}
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-
+<nav class="navbar navbar-expand-lg navbar-light fixed-top rtl" id="mainNav">
+    {% include "menu.html" %}
 	</nav>
 {% endblock %}
 
@@ -38,7 +38,8 @@
         <section class="post-excerpt">
             <p>When it comes to managing a fleet of remote devices, we know there are many points of friction. Our goal at resin.io is to eliminate as many of these as we can, and we've put a lot of work into making deployments across device types as similar as possible.<a href="/blog/evolve-your-fleet-manage-multiple-device-types-in-one-application/">…</a></p>
         </section>
-		</article>
+        </article>
+        {%placeholder articles%}
 </div>
 </section>
 
