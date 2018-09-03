@@ -1,0 +1,102 @@
+<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+<a class="navbar-brand mx-auto" href="/">
+    <img class="logo navbar-brand" src="../../../static/img/logo3.jpg" alt="faild">
+    دپارتمان اینترنت اشیاء
+</a>
+
+
+<div class="collapse navbar-collapse " id="navbarResponsive">
+    <ul class="navbar-nav mx-auto ">
+        <li class="nav-item nav-link mx-auto">
+            <a href="/fa/news" class="nav-link js-scroll-trigger">اخبار</a>
+        </li>
+
+        <li class="nav-item nav-link mx-auto">
+            <a href="/fa/articles" class="nav-link js-scroll-trigger">مقالات</a>
+        </li>
+
+        <li class="nav-item nav-link mx-auto">
+            <a href="/fa/events" class="nav-link js-scroll-trigger">رویدادها</a>
+        </li>
+
+        <li class="nav-item nav-link mx-auto">
+            <a href="/fa/wiki" class="nav-link js-scroll-trigger">دانشنامه</a>
+        </li>
+
+        <li class="nav-item nav-link mx-auto">
+            <a href="/fa/media" class="nav-link js-scroll-trigger">مدیا</a>
+        </li>
+        <li id = 'drop' class="rtl nav-item nav-link dropdown mx-auto">
+            <a href="#" class="language dropdown-toggle nav-link" data-toggle="dropdown">دسته بندی <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li class="nav-link nav-item">
+                    <a class="nav-link " href="/fa/categories/smart-home">
+                        خانه ی هوشمند
+                    </a>
+                </li>
+                <li class="nav-link nav-item">
+                    <a href="/fa/categories/smart-city" class="nav-link ">
+                        شهر هوشمند
+                    </a>
+                </li>
+                <li class="nav-link nav-item">
+                    <a href="/fa/categories/smart-industry-4" class="nav-link ">
+                        صنعت نسل ۴
+                    </a>
+                </li>
+                <li class="nav-link nav-item">
+                    <a href="/fa/categories/security" class="nav-link ">
+                        امنیت
+                    </a>
+                </li>
+            </ul>
+
+        </li>
+        <li class="nav-item nav-link mx-auto">
+            <a href="/fa/about" class="nav-link js-scroll-trigger">درباره ی ما</a>
+        </li>
+
+
+    </ul>
+
+    <ul class="navbar-nav">
+
+
+        <li class="nav-item nav-link mx-auto">
+            {% if user.is_authenticated %}
+            <p class="username nav-link rtl mx-auto">
+                کاربر : <a href="/" class="user english">{{ user.username }}</a>
+            </p>
+            <a href="/fa/logout" class="nav-link logout mx-auto">خروج</a>
+            {% else %}
+            <a href="/fa/accounts" class="login nav-link rtl mx-auto"> <i class="loginicon fa fas fa-user"></i> وارد حساب
+                خود شوید </a>
+
+            {% endif %}
+        </li>
+
+
+        <!--    <li class="nav-item nav-link dropdown">
+                       <a href="#" class="language dropdown-toggle nav-link" data-toggle="dropdown">فا/En <b class="caret"></b></a>
+                       <ul class="dropdown-menu">
+                                   <li class="nav-link nav-item">
+                                       <a class="nav-link language " href="/fa">
+                                       فارسی
+                                       </a>
+                                   </li>
+                                   <li class="nav-link nav-item">
+                                   <a href="/en" class="nav-link language">
+                                   English
+                                   </a>
+                                   </li>
+                       </ul>
+                    
+                   </li> -->
+
+
+    </ul>
+</div>
