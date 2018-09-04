@@ -1,5 +1,9 @@
 import os  # isort:skip
-gettext = lambda s: s
+
+
+def gettext(s): return s
+
+
 DATA_DIR = os.path.dirname(os.path.dirname(__file__))
 """
 Django settings for mysite project.
@@ -34,12 +38,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 
-
-
-
 ROOT_URLCONF = 'mysite.urls'
-
-
 
 
 # Internationalization
@@ -73,7 +72,7 @@ SITE_ID = 1
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'mysite', 'templates'),],
+        'DIRS': [os.path.join(BASE_DIR, 'mysite', 'templates'), ],
         'OPTIONS': {
             'context_processors': [
                 'django.contrib.auth.context_processors.auth',
@@ -135,7 +134,7 @@ INSTALLED_APPS = (
     'djangocms_file',
     'djangocms_link',
     'djangocms_picture',
-   # 'djangocms_style',
+    # 'djangocms_style',
     'djangocms_snippet',
     'djangocms_googlemap',
     'djangocms_video',
@@ -147,21 +146,32 @@ INSTALLED_APPS = (
     'taggit',
     'taggit_autosuggest',
     'djangocms_page_tags',
+    'aldryn_apphooks_config',
+    'aldryn_categories',
+    'aldryn_common',
+    'plugin.aldryn-newsblog.aldryn_newsblog',
+    'aldryn_people',
+    'aldryn_translation_tools',
+    'parler',
+    'sortedm2m',
+   
+
+
 
 )
 
 LANGUAGES = (
-    ## Customize this
-   ('fa',gettext('fa')),
-   ('en',gettext('en')),
-   ('fr',gettext('French')),
- 
-   
+    # Customize this
+    ('fa', gettext('fa')),
+    ('en', gettext('en')),
+    ('fr', gettext('French')),
+
+
 
 )
 
 CMS_LANGUAGES = {
-    ## Customize this
+    # Customize this
     1: [
         {
             'code': 'fa',
@@ -177,11 +187,11 @@ CMS_LANGUAGES = {
             'fallbacks': ['fa', 'fr'],
             'public': True,
         },
-        
+
     ],
-    
-    
-    
+
+
+
     'default': {
         'redirect_on_fallback': True,
         'public': True,
@@ -190,22 +200,22 @@ CMS_LANGUAGES = {
 }
 
 CMS_TEMPLATES = (
-    ## Customize this
- 
+    # Customize this
+
     ('home.html', 'Home'),
     ('news.html', 'News'),
-    ('articles.html','Articles'),
-    ('work.html','Work'),
-    ('events.html','Event'),
-    ('about.html','About'),
-    ('smarthome.html','smarthome'),
-    ('smartcity.html','smartcity'),
-    ('security.html','Security'),
-    ('industry.html','Industry'),
-    ('wiki.html','Wiki'),
-    ('media.html','Media'),
+    ('articles.html', 'Articles'),
+    ('work.html', 'Work'),
+    ('events.html', 'Event'),
+    ('about.html', 'About'),
+    ('smarthome.html', 'smarthome'),
+    ('smartcity.html', 'smartcity'),
+    ('security.html', 'Security'),
+    ('industry.html', 'Industry'),
+    ('wiki.html', 'Wiki'),
+    ('media.html', 'Media'),
 
-    
+
 
 )
 
@@ -226,7 +236,7 @@ DATABASES = {
 }
 
 MIGRATION_MODULES = {
-    
+
 }
 
 THUMBNAIL_PROCESSORS = (
