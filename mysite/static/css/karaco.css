@@ -264,13 +264,21 @@ footer > section > div:nth-child(3) a ,footer > section > div:nth-child(3) > div
 #news hr {
     border-color: antiquewhite;
 }
-
+.tbl{
+    display: table !important;
+}
+.tbl-cel{
+    display: table-cell;
+}
 
 .spacer {
     border: solid;
     border-color: #9d9d9d;
-    background-color: whitesmoke;
-    /*border-radius: 20px;*/
+  
+
+    border-radius: 20px;
+    width: 300px;
+    
     min-height: 200px;
     margin: 0px 0px 20px 0px;
 }
