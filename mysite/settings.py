@@ -149,7 +149,7 @@ INSTALLED_APPS = (
     'aldryn_apphooks_config',
     'aldryn_categories',
     'aldryn_common',
-    'plugin.aldryn-newsblog.aldryn_newsblog',
+    'aldryn_newsblog',
     'aldryn_people',
     'aldryn_translation_tools',
     'parler',
