@@ -451,7 +451,19 @@ font-family: BRoya;
     border-radius: 50%;
   }
 
+.authorname {
+    margin-left: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #1b2331;
+}
 
+.pno a {
+    color: #043241;
+    margin: 0 10px 0 10px;
+    text-decoration: underline;
+    font-family: monospace;
+}
 .glyphicon {
     position: relative;
     top: 1px;

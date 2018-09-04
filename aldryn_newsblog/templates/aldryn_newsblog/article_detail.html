@@ -7,16 +7,19 @@
 
 {% block newsblog_content %}
     {% include "aldryn_newsblog/includes/article.html" with detail_view="true" %}
-
+    <section class="bg-grayy">
+            <div class="container">
     {% static_placeholder "newsblog_social" %}
 
-    <ul>
+    <div  class="pno text-center">
         {% if prev_article %}
-            <li><a href="{{ prev_article.get_absolute_url }}">{% trans "Previous Article" %}</a></li>
+            <span><a href="{{ prev_article.get_absolute_url }}">{% trans "Previous Article" %}</a></span>
         {% endif %}
-        <li><a href="{% namespace_url "article-list" %}">{% trans "Back to Overview" %}</a></li>
+          <span><a href="{% namespace_url "article-list" %}">{% trans "Back to Overview" %}</a></span>
         {% if next_article %}
-            <li><a href="{{ next_article.get_absolute_url }}">{% trans "Next Article" %}</a></li>
+            <span><a href="{{ next_article.get_absolute_url }}">{% trans "Next Article" %}</a></span>
         {% endif %}
-    </ul>
+    </div>
+    </div>
+    </section>
 {% endblock %}
