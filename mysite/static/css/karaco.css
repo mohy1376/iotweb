@@ -264,12 +264,6 @@ footer > section > div:nth-child(3) a ,footer > section > div:nth-child(3) > div
 #news hr {
     border-color: antiquewhite;
 }
-.tbl{
-    display: table !important;
-}
-.tbl-cel{
-    display: table-cell;
-}
 
 .spacer {
     border: solid;
@@ -277,11 +271,49 @@ footer > section > div:nth-child(3) a ,footer > section > div:nth-child(3) > div
   
 
     border-radius: 20px;
-    width: 300px;
     
-    min-height: 200px;
+
+    height: 250px;
     margin: 0px 0px 20px 0px;
 }
+
+.post * {
+    direction: rtl;
+    text-align: right;
+    font-family: BNazanin !important;
+}
+
+
+.spacer{
+
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.spacer {
+    -ms-overflow-style: none;
+}
+.spacer{
+    overflow: -moz-scrollbars-none; 
+}
+.spacer:hover{
+    background-color: #3f464e;
+}
+.spacer h2 > a:hover {
+    text-decoration: none;
+    color: white;
+
+}
+.spacer::-webkit-scrollbar {
+        width: 0px !important;  /* remove scrollbar space */
+        background: transparent;  /* optional: just make scrollbar invisible */
+}
+.spacer .authorname{
+    color: whitesmoke;
+}
+.latest_article_article{
+    margin-top: 5px;
+}
+
 .newsheader{
     background-image: url("../img/5.jpg");
 }
