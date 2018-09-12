@@ -1,30 +1,27 @@
 {% load i18n staticfiles thumbnail cms_tags apphooks_config_tags %}
-<div class="col-lg-4 col-md-4 col-xs-12 tbl-cel ">
+
+
+
+
+<div class="col-lg-4 col-md-4 col-xs-12 text-center ">
     <div class="spacer">
-        <article class=" 
-    {% if article.is_featured %} featured{% endif %}
-    {% if not article.published %} unpublished{% endif %}">
+           
 
-    {# The image is only shown on the detail view by using the condition "and detail_view" #}
-    {% if article.featured_image_id and detail_view %}
-        <p>
-            <img  src="{% thumbnail article.featured_image 800x450 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}">
-        </p>
-    {% endif %}
+        <article class=" latest_article_article">
 
-    {% if article.categories.exists %}
-        <p>
-            {% for category in article.categories.all %}
-                <a href="{% namespace_url 'article-list-by-category' category.slug namespace=namespace default='' %}">{{ category.name }}</a>
-                {% if not forloop.last %}, {% endif %}
-            {% endfor %}
-        </p>
-    {% endif %}
+    {% include 'aldryn_newsblog/includes/author.html' with author=article.author %}
 
-    {% include "aldryn_newsblog/includes/author.html" with author=article.author %}
-
-    <header class="post-header">
-    <span class="post-meta"> 
+    <header class='post-header'>
+    <span class="post-meta">
+            <h2 class="post-title">
+                    {% if not detail_view %}
+                        <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">{% render_model article "title" %}</a> 
+                       
+                    {% else %}
+                        {% render_model article "title" %}
+                    {% endif %}
+                </h2>
+             
             <time>{{ article.publishing_date|date }}</time> ,
             {% if article.tags %}
             {% for tag in article.tags.all %}
@@ -33,15 +30,7 @@
             {% endif %}
 
     </span>
-    <h2 class="post-title">
-        {% if not detail_view %}
-            <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">{% render_model article "title" %}</a> 
-           
-        {% else %}
-            {% render_model article "title" %}
-        {% endif %}
-    </h2>
-    </header>
+        </header>
     
 
 
@@ -58,11 +47,9 @@
     </section>
 
 
-    {% if detail_view %}
-        {% render_placeholder article.content language placeholder_language %}
-    {% endif %}
 
 </article>
+
 </div>
 
 </div>

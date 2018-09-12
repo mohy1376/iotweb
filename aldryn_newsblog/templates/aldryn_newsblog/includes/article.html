@@ -1,7 +1,7 @@
 {% load i18n staticfiles thumbnail cms_tags apphooks_config_tags %}
 <section class="bg-grayy">
 <div class="container">
-<article class="post tag-announcement 
+<article dir="rtl" class="post tag-announcement 
     {% if article.is_featured %} featured{% endif %}
     {% if not article.published %} unpublished{% endif %}">
 
@@ -20,31 +20,36 @@
             {% endfor %}
         </p>
     {% endif %}
-
-    {% include "aldryn_newsblog/includes/author.html" with author=article.author %}
-
-    <header class="post-header">
-    <span class="post-meta"> 
-            <time>{{ article.publishing_date|date }}</time> ,
-            {% if article.tags %}
-            {% for tag in article.tags.all %}
-                <a href="{% namespace_url 'article-list-by-tag' tag=tag.slug namespace=namespace default='' %}">{{ tag.name }}</a>
-            {% endfor %}
-            {% endif %}
-
-    </span>
-    <h2 class="post-title">
-        {% if not detail_view %}
-            <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">{% render_model article "title" %}</a> 
-           
-        {% else %}
-            {% render_model article "title" %}
-        {% endif %}
-    </h2>
-    </header>
+<div class="row">
+    <div class="col-xs-12 col-md-8 col-lg-8">
     
-
-
+            <header class="post-header">
+                    <span class="post-meta"> 
+                            <time>{{ article.publishing_date|date }}</time> ,
+                            {% if article.tags %}
+                            {% for tag in article.tags.all %}
+                                <a href="{% namespace_url 'article-list-by-tag' tag=tag.slug namespace=namespace default='' %}">{{ tag.name }}</a>
+                            {% endfor %}
+                            {% endif %}
+                
+                    </span>
+                    <h2 class="post-title">
+                        {% if not detail_view %}
+                            <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">{% render_model article "title" %}</a> 
+                           
+                        {% else %}
+                            {% render_model article "title" %}
+                        {% endif %}
+                    </h2>
+                    </header>
+    </div>
+    <div class="col-xs-12 col-md-4 col-lg-4">
+    {% include "aldryn_newsblog/includes/author.html" with author=article.author %}
+    
+    </div>
+    
+</div>
+    
 
 
 
@@ -52,7 +57,7 @@
     {% render_model article "lead_in" %}
         {% if not detail_view %}
         <span class="authorname">
-            <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}"> ... </a>
+            <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}"> ادامه ی مطلب </a>
         </span>
         {% endif %}
     </section>
