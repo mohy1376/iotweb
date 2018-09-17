@@ -1,0 +1,52 @@
+{% load i18n staticfiles thumbnail cms_tags apphooks_config_tags %}
+
+
+
+
+<div class="col-lg-4 col-md-4 col-xs-12 text-center ">
+
+    <div class="spacer">
+           
+    
+    <article dir="rtl" class=" latest_article_article">
+    
+    {% include 'aldryn_newsblog/includes/latest_author.html' with author=article.author %}
+
+    <header class='post-header'>
+    <span class="post-meta">
+            <h2 class="post-title">
+                    {% if not detail_view %}
+                        <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">{% render_model article "title" %}</a> 
+                       
+                    {% else %}
+                        {% render_model article "title" %}
+                    {% endif %}
+                </h2>
+             
+            <time>{{ article.publishing_date|date }}</time> ,
+            {% if article.tags %}
+            {% for tag in article.tags.all %}
+                <a href="{% namespace_url 'article-list-by-tag' tag=tag.slug namespace=namespace default='' %}">{{ tag.name }}</a>
+            {% endfor %}
+            {% endif %}
+
+    </span>
+        </header>
+    
+
+
+
+
+
+    <section class="post-excerpt">
+    {% render_model article "lead_in" %}
+       
+    </section>
+
+
+
+</article>
+
+</div>
+
+</div>
