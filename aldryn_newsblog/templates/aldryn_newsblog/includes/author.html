@@ -1,19 +1,20 @@
 {% load i18n staticfiles thumbnail apphooks_config_tags %}
 
 {% if author %}
-    <p>
+    <p class="authordetail">
         <a href="{% namespace_url 'article-list-by-author' author.slug namespace=namespace default='' %}">
          
-            {% if author.visual %}
-                {% thumbnail author.visual "50x50" crop upscale subject_location=author.visual.subject_location as author_image %}
-                <img class="img-circle" src="{{ author_image.url }}" width="50" height="50" alt="{{ author.name }}">
-            {% endif %}
             <span class="authorname">
             {{ author.name }} :
             </span>
             <span class="authorname">
                     {% if author.function %}{{ author.function }}{% endif %}
             </span>
+            {% if author.visual %}
+            {% thumbnail author.visual "50x50" crop upscale subject_location=author.visual.subject_location as author_image %}
+            <img class="img-circle" src="{{ author_image.url }}" width="50" height="50" alt="{{ author.name }}">
+        {% endif %}
+
         </a>
     </p>
    

@@ -56,7 +56,7 @@
     <section class="post-excerpt">
     {% render_model article "lead_in" %}
         {% if not detail_view %}
-        <span class="authorname">
+        <span class="authorname continue">
             <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}"> ادامه ی مطلب </a>
         </span>
         {% endif %}

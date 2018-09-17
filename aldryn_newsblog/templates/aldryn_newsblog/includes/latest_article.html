@@ -4,12 +4,13 @@
 
 
 <div class="col-lg-4 col-md-4 col-xs-12 text-center ">
+
     <div class="spacer">
            
-
-        <article class=" latest_article_article">
-
-    {% include 'aldryn_newsblog/includes/author.html' with author=article.author %}
+    
+    <article dir="rtl" class=" latest_article_article">
+    
+    {% include 'aldryn_newsblog/includes/latest_author.html' with author=article.author %}
 
     <header class='post-header'>
     <span class="post-meta">
@@ -39,11 +40,7 @@
 
     <section class="post-excerpt">
     {% render_model article "lead_in" %}
-        {% if not detail_view %}
-        <span class="authorname">
-            <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}"> ... </a>
-        </span>
-        {% endif %}
+       
     </section>
 
 
