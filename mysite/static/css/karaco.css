@@ -168,7 +168,7 @@ footer > section {
 
 #mainNav {
     border-color: transparent;
-    background-color: #00000059;
+    background-color: transparent;
     height: 120px;
 }
 
@@ -552,4 +552,6 @@ font-family: BRoya;
   .authordetail{
       text-align: left !important;
   }
- 
+ .simpleHeader{
+min-height: 650px;    
+}

@@ -5,108 +5,16 @@
 	{% include "menu.html" %}
 </nav>
 
-{% endblock %} {% block header %}
-
-<div id="demo" class="carousel carousel-fade slide" data-ride="carousel" data-pause="false">
-
-	<ul class="carousel-indicators">
-		<li data-target="#demo" data-slide-to="0" class="active"></li>
-		<!--
-		<li data-target="#demo" data-slide-to="1"></li>
-		<li data-target="#demo" data-slide-to="2"></li>
-		<li data-target="#demo" data-slide-to="3"></li> -->
-	</ul>
-
-	<div class="carousel-inner">
-		<div class="carousel-item active">
-			<header class="masthead masthead1 text-center text-white d-flex">
-
-				<div class="container my-auto">
-					<div class="row">
-						<div class="col-lg-10 mx-auto">
-							<h1 class="text-uppercase">
-								<strong class="persian">{% placeholder text1_1 %}</strong>
-							</h1>
-							<hr>
-						</div>
-						<div class="col-lg-8 mx-auto">
-							<p class="text-faded mb-5">{% placeholder text1_2 %} </p>
-							<a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-						</div>
-					</div>
-				</div>
-			</header>
-
-		</div>
-		<!--
-	  <div class="carousel-item ">
-			<header class=" masthead masthead2 text-center text-white d-flex">
-				<div class="container my-auto">
-					<div class="row">
-						<div class="col-lg-10 mx-auto">
-							<h1 class="text-uppercase">
-								<strong class="persian">{% placeholder text2_1 %}</strong>
-							</h1>
-							<hr>
-						</div>
-						<div class="col-lg-8 mx-auto">
-							<p class="text-faded mb-5">{% placeholder text2_2 %}</p>
-							<a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-						</div>
-					</div>
-				</div>
-			</header>
-
-	  </div>
-	  <div class="carousel-item">
-
-
-		<header class="masthead3 masthead text-center text-white d-flex">
+{% endblock %}
+{% block header %}
+<section class="bg-info simpleHeader">
 
 
 
-			<div class="container my-auto">
-				<div class="row">
-					<div class="col-lg-10 mx-auto">
-						<h1 class="text-uppercase">
-							<strong class="persian">{% placeholder text3_1 %}</strong>
-						</h1>
-						<hr>
-					</div>
-					<div class="col-lg-8 mx-auto">
-						<p class="text-faded mb-5">{% placeholder text3_2 %}</p>
-						<a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-					</div>
-				</div>
-			</div>
-		</header>
-	  </div>
-	  <div class="carousel-item ">
-		<header class="masthead4 masthead text-center text-white d-flex">
-				<div class="container my-auto">
-					<div class="row">
-						<div class="col-lg-10 mx-auto">
-							<h1 class="text-uppercase">
-								<strong class="persian">{% placeholder text4_1 %}</strong>
-							</h1>
-							<hr>
-						</div>
-						<div class="col-lg-8 mx-auto">
-							<p class="text-faded mb-5">{% placeholder text4_2 %}</p>
-							<a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-						</div>
-					</div>
-				</div>
-			</header>
 
-	  </div> -->
-	</div>
-
-
-
-</div>
-
-{% endblock header %} {% block content %}
+</section>
+{% endblock header %} 
+{% block content %}
 
 <!-- news -->
 <section id="news" class="text-white bg-dark">
