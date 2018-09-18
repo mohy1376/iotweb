@@ -1,155 +1,147 @@
 {% load cms_tags menu_tags sekizai_tags staticfiles %}
 
 <!DOCTYPE html>
-<html  lang="{{LANGUAGE_CODE}}">
+<html lang="{{LANGUAGE_CODE}}">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="{% page_attribute 'meta_description' %}">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="{% page_attribute 'meta_description' %}">
+  <meta name="author" content="">
 
-    <title>{% page_attribute 'page_title' %} - IOT Department</title>
+  <title>{% page_attribute 'page_title' %} - IOT Department</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="icon" href="{% static 'img/logo2.png' %}" type="image/x-icon" />
-    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link rel="icon" href="{% static 'img/logo2.png' %}" type="image/x-icon" />
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
-   
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    
-    <!-- Plugin CSS -->
-    <!-- Custom styles for this template -->
-    <link href="{% static 'css/creative.css' %}" rel="stylesheet">
-    <link href="{% static 'css/karaco.css' %} " rel="stylesheet">
-   {% render_block "css" %}
-  </head>
+  <!-- Custom fonts for this template -->
+  <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
 
-  <body class="cursor" id="page-top">
-   {% cms_toolbar %}
-   
-    {% block nav %}{% endblock %}
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+    rel='stylesheet' type='text/css'>
 
+  <!-- Plugin CSS -->
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/creative.css' %}" rel="stylesheet">
+  <link href="{% static 'css/karaco.css' %} " rel="stylesheet">  
+  {% render_block "css" %}
+</head>
 
-    {% block header %} {% endblock %}
-
-
-    {% block content %} {% endblock %}
+<body class="cursor" id="page-top">
+  {% cms_toolbar %} {% block nav %}{% endblock %} {% block header %} {% endblock %} {% block content %} {% endblock %}
 
 
 
 
-        <footer>
-          <section class="bg-navy text-white">
-            <div class="footerlink rtl container text-center"> 
-                صفحات اجتماعی ما :
-              <a class="ml-1 mr-1" href="/">  
-              <i class="fa fa-github text-white"></i>
-              </a>
-              <a class="ml-1 mr-1" href="/">  
-                <i class="fa fa-twitter text-white"></i>
-              </a>
-              <a class="ml-1 mr-1" href="https://t.me/iot_catui">  
-                <i class="fa fa-telegram text-white"></i>
-              </a>
-              <a class="ml-1 mr-1"  href="/">  
-                <i class="fa fa-linkedin text-white"></i>
-              </a>
-            </div>
-            <div class="container text-center text-md-right mt-5">
-            <div class="fontfooter rtl row mt-3">
-              <div class="  col-md-3 col-lg-3 col-xl-3 mb-4">
-                <h6>لینک های مفید </h6>
-                <hr class=" hr-color mb-4 mt-0 d-inline-block mx-auto">
-                <p><a href="http://catui.ir/">catui</a></p>
-                <p><a href="">link1</a></p>
-                <p><a href="">link1</a></p>
-                <p><a href="">link1</a></p>
-                <p><a href="">link1</a></p>
-              </div>
-              <div class="col-md-2 col-lg-2 col-xl-2  mb-4">       
-                         <h6>دسترسی سریع</h6>
-                <hr class="hr-color mb-4 mt-0 d-inline-block mx-auto">
-                <div class="footerelements">
-                  <p><a href="/">صفحه اصلی</a></p>
-                  <p><a href="/accounts/">ورود/ ثبت نام</a></p>
-                  <p><a href="">آخرین اخبار</a></p>
-                  <p><a href="">مطالب پربازدید</a></p>
-                </div>
-              </div>
-              <div class="col-md-3 col-lg-3 col-xl-3 mb-4"> 
-                               <h6>ارتباط با ما</h6>
-                <hr class="hr-color mb-4 mt-0 d-inline-block mx-auto">
-                <div class="footerelements">
-                  <address>
-                        نشانی: 
-                    </br>
-                    ساختمان ۲ مرکز رشد خواجه نصیر
-                    </br>
-                        تلفن: 
-                    </br>
-                        ایمیل:
-                    </br>
-                  </address>
-                </div>
-              </div>
-              <div class="col-md-4 col-lg-3 col-xl-3">     
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eos fuga nesciunt voluptatem soluta totam sit beatae ullam doloribus nam, error quos animi ab, inventore nemo? Suscipit facilis nobis error.
-                </p>
-              </div>
-            </div>
-
+  <footer>
+    <section class="bg-navy text-white">
+      <div class="footerlink rtl container text-center">
+        صفحات اجتماعی ما :
+        <a class="ml-1 mr-1" href="/">
+          <i class="fa fa-github text-white"></i>
+        </a>
+        <a class="ml-1 mr-1" href="/">
+          <i class="fa fa-twitter text-white"></i>
+        </a>
+        <a class="ml-1 mr-1" href="https://t.me/iot_catui">
+          <i class="fa fa-telegram text-white"></i>
+        </a>
+        <a class="ml-1 mr-1" href="/">
+          <i class="fa fa-linkedin text-white"></i>
+        </a>
+      </div>
+      <div class="container text-center text-md-right mt-5">
+        <div class="fontfooter rtl row mt-3">
+          <div class="  col-md-3 col-lg-3 col-xl-3 mb-4">
+            <h6>لینک های مفید </h6>
+            <hr class=" hr-color mb-4 mt-0 d-inline-block mx-auto">
+            <p><a href="http://catui.ir/">catui</a></p>
+            <p><a href="">link1</a></p>
+            <p><a href="">link1</a></p>
+            <p><a href="">link1</a></p>
+            <p><a href="">link1</a></p>
           </div>
-            <div class="text-white  row bg-navy2"> <div class="col-lg-12">
-              <div class="container text-center mt-3 mb-3"> 
-                <p class="copyright">All content copyright IOT Department &copy; 2018 • All rights reserved.</p>
-                  <p>
-                  Designed by <a href="#"> Karaco </a>
-                  </p>
-                  
-                  <a href=""><i class="fa fa-users" aria-hidden="true"></i> Term of Use    </a> 
-                  
-                  <a href=""><i class="fa fa-info" aria-hidden="true"></i> Privacy and Policy </a>
-                </div>
-
-
-              </div> 
+          <div class="col-md-2 col-lg-2 col-xl-2  mb-4">
+            <h6>دسترسی سریع</h6>
+            <hr class="hr-color mb-4 mt-0 d-inline-block mx-auto">
+            <div class="footerelements">
+              <p><a href="/">صفحه اصلی</a></p>
+              <p><a href="/accounts/">ورود/ ثبت نام</a></p>
+              <p><a href="">آخرین اخبار</a></p>
+              <p><a href="">مطالب پربازدید</a></p>
             </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-xl-3 mb-4">
+            <h6>ارتباط با ما</h6>
+            <hr class="hr-color mb-4 mt-0 d-inline-block mx-auto">
+            <div class="footerelements">
+              <address>
+                <p>
+                  <font style="font-weight: bold">
+                    نشانی:
+                  </font>
+                </br>
+                  ساختمان ۲ مرکز رشد خواجه نصیر
+                </p>
+                <p>
+                  <font style="font-weight: bold">
+                    تلفن:
+                  </font>
+                  09368809066
+                </p>
+                <p>
+                  <font style="font-weight: bold">
+                    ایمیل:
+                  </font>
+                  <font style="font-size: 16px">
+                  catuisite@gmail.com
+                </font>
+                </p>
+              </address>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eos fuga nesciunt voluptatem soluta totam sit beatae
+              ullam doloribus nam, error quos animi ab, inventore nemo? Suscipit facilis nobis error.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="text-white  row bg-navy2">
+        <div class="col-lg-12">
+          <div class="container text-center mt-3 mb-3">
+            <p class="copyright">All content copyright IOT Department &copy; 2018 • All rights reserved.</p>
+            <p>
+              Designed by <a href="#"> Karaco </a>
+            </p>
+            <a href=""><i class="fa fa-users" aria-hidden="true"></i> Term of Use </a>
+            <a href=""><i class="fa fa-info" aria-hidden="true"></i> Privacy and Policy </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
 
-            
-          </section>
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'vendor/scrollreveal/scrollreveal.min.js'%}"></script>
+  <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js'%}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'js/creative.min.js' %}"></script>
+  <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'js/karaco.js' %}"></script> {% render_block "js" %}
 
 
-        </footer>
-
-
-
-
-
-
-    
-    <!-- Bootstrap core JavaScript -->
-    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
-    <script src="{% static 'vendor/scrollreveal/scrollreveal.min.js'%}"></script>
-    <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js'%}"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="{% static 'js/creative.min.js' %}"></script>
-    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
-    <script src="{% static 'js/karaco.js' %}"></script>
-
-    {% render_block "js" %}
-    
-
-  </body>
+</body>
 
 </html>
