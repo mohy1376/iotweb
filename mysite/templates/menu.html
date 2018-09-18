@@ -4,7 +4,7 @@
 </button>
 
 <a class="navbar-brand mx-auto" href="/">
-    <img class="logo navbar-brand" src="../../../../../../../../static/img/logo3.jpg" alt="faild">
+    
     دپارتمان اینترنت اشیاء
 </a>
 
@@ -30,7 +30,7 @@
         <li class="nav-item nav-link mx-auto">
             <a href="/fa/media" class="nav-link js-scroll-trigger">مدیا</a>
         </li>
-        <li id = 'drop' class="rtl nav-item nav-link dropdown mx-auto">
+    <!--    <li id = 'drop' class="rtl nav-item nav-link dropdown mx-auto">
             <a href="#" class="language dropdown-toggle nav-link" data-toggle="dropdown">دسته بندی <b class="caret"></b></a>
             <ul class="dropdown-menu">
                 <li class="nav-link nav-item">
@@ -55,7 +55,7 @@
                 </li>
             </ul>
 
-        </li>
+        </li> -->
         <li class="nav-item nav-link mx-auto">
             <a href="/fa/about" class="nav-link js-scroll-trigger">درباره ی ما</a>
         </li>
@@ -68,8 +68,8 @@
 
         <li class="nav-item nav-link mx-auto">
             {% if user.is_authenticated %}
-            <p class="username nav-link rtl mx-auto">
-                کاربر : <a href="/" class="user english">{{ user.username }}</a>
+            <p class="username rtl mx-auto">
+                 <a href="/" class="nav-link user english">کاربر : {{ user.username }}</a>
             </p>
             <a href="/fa/logout" class="nav-link logout mx-auto">خروج</a>
             {% else %}

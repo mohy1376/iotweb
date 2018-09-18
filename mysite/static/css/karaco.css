@@ -64,7 +64,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
-    color: rgb(146, 173, 185);
+    color: #EFEFEF;
 
    text-transform: uppercase;
 }
@@ -83,16 +83,16 @@
 
 }
 .persian{
-    font-family: BRoya;
+    font-family: IranSansLight;
     font-size: 150%;
 }
 .persianText{
-    font-family: BRoya;
+    font-family: IranSansLight;
     font-size: 150%;
 
 }
 .persianTitle{
-    font-family: BRoya;
+    font-family: IranSansLight;
     font-size: 250%;
 }
 .size{
@@ -198,7 +198,7 @@ header.masthead4 {
 }
 #mainNav .navbar-brand{
     font-size: 120%;
-    font-family: BRoya;
+    font-family: IranSansLight;
    
 }
 .bg-black{
@@ -206,10 +206,10 @@ header.masthead4 {
 }
 @media (min-width: 992px){
 #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link, #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
-    color: whitesmoke;
+    color: #BDD4DE;
 }
 #mainNav.navbar-shrink .navbar-brand {
-    color:rgb(182, 178, 178);
+    color:#BDD4DE;
 
 }
 }
@@ -241,7 +241,7 @@ footer > section {
 }
 
 Footer h6{
-    font-family: BRoya;
+    font-family: IranSansLight;
     font-size: 140%;
 }
 footer > section > div:nth-child(3) a ,footer > section > div:nth-child(3) > div > div >  p {
@@ -259,12 +259,16 @@ footer > section > div:nth-child(3) a ,footer > section > div:nth-child(3) > div
 .bg-wiki{
     background-color: darkorange;
 }
+#events {
+    padding-top:  50px ;
+    background-color: #EFEFEF;
+}
 #events h3, h2 {
-    font-family:BRoya;
+    font-family:IranSansLight;
 
 }
 #news h2 {
-    font-family: BRoya;
+    font-family: IranSansLight;
 }
 #events hr {
     border-color: #043241;
@@ -458,7 +462,7 @@ body {
 }
 #mainNav {
 
-font-family: BRoya;
+font-family: IranSansLight;
 }
 .login{
     font-size: 11px;
@@ -478,9 +482,14 @@ font-family: BRoya;
     font-family: monospace;
 }
 .user{
-    font-size: 10px;
-    font-weight: normal;
-    text-transform: none;
+    font-size: 10px !important;
+    font-weight: normal !important;
+    text-transform: none !important;
+    display: inline !important;
+    
+}
+.user:hover{
+    color: #1b2331;
 }
 #mainNav .navbar-nav > li.nav-item > a.logout, #mainNav .navbar-nav > li.nav-item > a.logout:focus {
     font-size: 10px;
@@ -490,7 +499,7 @@ font-family: BRoya;
 .username{
     margin-bottom: 0px;
     padding-bottom: 0px;
-    color: white;
+    color: #BDD4DE !important;
 }
 
 
@@ -523,7 +532,6 @@ font-family: BRoya;
     font-weight: normal;
     line-height: 1;
 }
-
 .form-control {
     display: block;
     width: 100%;
@@ -542,16 +550,21 @@ font-family: BRoya;
          -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
             transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   }
-  .form-control:focus {
+.form-control:focus {
     border-color: #66afe9;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
             box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
   }
 
-  .authordetail{
+.authordetail{
       text-align: left !important;
   }
- .simpleHeader{
-min-height: 650px;    
+.simpleHeader{
+    min-height: 650px;    
+    background-color: #EFEFEF;
+    padding-top: 250px;
+}
+.simpleHeader .form-control{
+   border-color: #2B3A42; 
 }
