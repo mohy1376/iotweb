@@ -36,16 +36,18 @@
              url('../fonts/BYekan.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
              url('../fonts/BYekan.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
       }
-@font-face {
-        font-family: 'Iransans';
-        src: url('../fonts/iransans.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
-      }
-@font-face {
-        font-family: 'Iraniansans';
-        src: url('../fonts/iraniansans.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
-      }
-
-
+@font-face{
+        font-family: 'IranSans';
+        src: url('../fonts/IRANSansWeb.eot?#') format('eot'),
+             url('../fonts/IRANSansWeb.woff') format('woff'),
+             url(../fonts/IRANSansWeb.ttf) format('truetype');
+} 
+@font-face{
+    font-family: 'IranSansLight';
+    src: url('../fonts/IRANSansWeb_Light.eot') format('eot'),
+         url('../fonts/IRANSansWeb_Light.woff') format('woff'),
+         url(../fonts/IRANSansWeb_Light.ttf) format('truetype');
+}
 .dropdown:hover>.dropdown-menu {
     display: block;
 }
@@ -197,6 +199,7 @@ header.masthead4 {
 #mainNav .navbar-brand{
     font-size: 120%;
     font-family: BRoya;
+   
 }
 .bg-black{
     background-color: black;
@@ -450,7 +453,7 @@ article > header > h2 > a:hover {
     padding-bottom: 10px;
 }
 body {
-    font-family: BRoya;
+    font-family: IranSansLight !important;
 
 }
 #mainNav {
