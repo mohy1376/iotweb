@@ -261,6 +261,7 @@ footer > section > div:nth-child(3) a ,footer > section > div:nth-child(3) > div
 }
 #events {
     padding-top:  50px ;
+    padding-bottom: 0px;
     background-color: #EFEFEF;
 }
 #events h3, h2 {
