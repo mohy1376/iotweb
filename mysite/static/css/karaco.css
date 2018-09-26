@@ -293,7 +293,7 @@ footer > section > div:nth-child(3) a ,footer > section > div:nth-child(3) > div
 .post * {
     direction: rtl;
     text-align: right;
-    font-family: BNazanin !important;
+
 }
 
 
@@ -566,9 +566,23 @@ font-family: IranSansLight;
     background-color: #EFEFEF;
     padding-top: 250px;
 }
+.simpleHeader1{
+    background-color: #EFEFEF;
+    padding-top: 100px;
+    padding: 0 !important;
+}
 .simpleHeader .form-control{
    border-color: #2B3A42; 
 }
 .bg-fili{
     background-color: #3F5765;
+}
+#AboutUs{
+    background-color: #EFEFEF;
+}
+.bg-main{
+    background-color: #EFEFEF !important;
+}
+.padhead{
+    padding-top: 150px;
 }
