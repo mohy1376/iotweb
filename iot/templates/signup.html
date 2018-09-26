@@ -1,33 +1,31 @@
+{% extends "base.html" %}
+{% load cms_tags staticfiles %}
 
- 
-    {% extends "base.html" %}
-    {% load cms_tags staticfiles %}
-    
-    {% block title %}{% page_attribute "page_title" %}  {% endblock title %}
-    
-    
-    {% block nav %}
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top rtl" id="mainNav">
-        {% include "menu.html" %}
-        </nav>
-    
-    {% endblock %}
-    
-    
-    
-    
-    {% block header %}
-
-    <header class="masthead signupheader text-center text-white d-flex"></header>
+{% block title %}{% page_attribute "page_title" %} {% endblock title %}
 
 
-    {% endblock header %}
-    {% block content %}
+{% block nav %}
+<nav class="navbar navbar-expand-lg navbar-light fixed-top rtl" id="mainNav">
+    {% include "menu.html" %}
+</nav>
 
-<section>
+{% endblock %}
+
+
+
+
+{% block header %}
+
+<header class="bg-main" style="height:50px"></header>
+
+
+{% endblock header %}
+{% block content %}
+
+<section class="bg-main">
     <div class="row">
-        <div  class="col-lg-6 col-md-6 col-xs-12">
-            <form action="" method="POST" >
+        <div class="col-lg-6 col-md-6 col-xs-12">
+            <form action="" method="POST">
                 {% csrf_token %}
                 <fieldset class="text-center">
                     <legend>:حساب جدید بسازید</legend>
@@ -44,7 +42,7 @@
             </form>
         </div>
         <div class="col-lg-6 col-md-6 col-xs-12">
-            <form action="" method="POST" >
+            <form action="" method="POST">
                 {% csrf_token %}
                 <fieldset class="text-center">
                     <legend>:وارد حساب خود شوید</legend>
@@ -61,6 +59,6 @@
     </div>
 </section>
 
-    
+
 
 {% endblock content%}

@@ -10,7 +10,7 @@
 <section class="simpleHeader">
 
 	<form class="form" method="POST">
-
+		{% csrf_token %}
 		<div class="text-center container ">
 	  
 		  <div class="row justify-content-center">
@@ -78,7 +78,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<h2 class="section-heading">آخرین اخبار روز اینترنت اشیاء‌ در ایران و دنیا</h2>
+				<h2 class="section-heading">آخرین اخبار روز اینترنت اشیا‌ در ایران و دنیا</h2>
 				<hr class="my-4">
 			</div>
 		</div>
