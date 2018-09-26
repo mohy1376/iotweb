@@ -256,9 +256,7 @@ footer > section > div:nth-child(3) a ,footer > section > div:nth-child(3) > div
 .bg-sefid{
     background-color: whitesmoke;
 }
-.bg-wiki{
-    background-color: darkorange;
-}
+
 #events {
     padding-top:  50px ;
     padding-bottom: 0px;
@@ -575,4 +573,9 @@ font-family: IranSansLight;
 
 .bg-main{
     background-color: #EFEFEF;
+}
+
+.farsi{
+    direction: rtl ;
+    text-align: right;
 }
