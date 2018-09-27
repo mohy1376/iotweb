@@ -575,3 +575,17 @@ font-family: IranSansLight;
     direction: rtl ;
     text-align: right;
 }
+
+.margins{
+    margin-right:auto ;
+    margin-left:auto ;
+    width: 70%;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="margins"] {
+        width: 90%;
+    }
+}
