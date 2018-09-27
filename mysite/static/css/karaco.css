@@ -118,10 +118,6 @@
    direction: rtl;
 }
 
-.far{
-    direction: rtl;
-    text-align: right;
-}
 .language{
     color: whitesmoke;
     font-weight: bold;
