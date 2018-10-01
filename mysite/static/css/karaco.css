@@ -118,10 +118,6 @@
    direction: rtl;
 }
 
-.far{
-    direction: rtl;
-    text-align: right;
-}
 .language{
     color: whitesmoke;
     font-weight: bold;
@@ -256,9 +252,7 @@ footer > section > div:nth-child(3) a ,footer > section > div:nth-child(3) > div
 .bg-sefid{
     background-color: whitesmoke;
 }
-.bg-wiki{
-    background-color: darkorange;
-}
+
 #events {
     padding-top:  50px ;
     padding-bottom: 0px;
@@ -585,4 +579,24 @@ font-family: IranSansLight;
 }
 .padhead{
     padding-top: 150px;
+}
+
+
+.farsi{
+    direction: rtl ;
+    text-align: right;
+}
+
+.margins{
+    margin-right:auto ;
+    margin-left:auto ;
+    width: 70%;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="margins"] {
+        width: 90%;
+    }
 }
