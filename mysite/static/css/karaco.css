@@ -139,6 +139,13 @@ html {
 a {  cursor: url("../img/pointer.png"), auto; }
 
 */
+.header_logo{
+    padding-top: 50px;
+    padding-bottom: 20px
+}
+.header_logo img {
+    width: 200px;
+}
 .logo{
     width: 50px;
     border-radius: 30%;
@@ -558,7 +565,10 @@ font-family: IranSansLight;
 .simpleHeader{
     min-height: 650px;    
     background-color: #EFEFEF;
-    padding-top: 250px;
+    padding-top: 150px;
+    padding-bottom: 190px;
+    
+
 }
 .simpleHeader1{
     background-color: #EFEFEF;
@@ -576,6 +586,21 @@ font-family: IranSansLight;
 }
 .bg-main{
     background-color: #EFEFEF !important;
+}
+#pagindiv > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#pagindiv > ul li {
+    display: inline;
+    padding: 0 10px 0 10px;
+}
+#pagindiv a {
+    color: #1c678f;
+}
+#pagindiv a:hover {
+ color: #0f3c69;
 }
 .padhead{
     padding-top: 150px;
