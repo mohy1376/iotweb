@@ -360,6 +360,10 @@ background-color: #e1e1e1
     border-bottom: #209ce2 1px solid;
     word-break: break-word;
 }
+.post span {
+    font-family: IranSansLight !important;
+    line-height: 170%;
+}
 .post-title {
     margin: 0;
 }
