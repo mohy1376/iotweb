@@ -2,6 +2,9 @@
 {% load i18n %}
 
 {% block newsblog_content %}
+    <h1 class="text-center bg-grayy bg-main">
+         مقالات
+    </h1>
     {% for article in article_list %}
         {% include "aldryn_newsblog/includes/article.html" %}
     {% empty %}
