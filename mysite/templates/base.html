@@ -26,7 +26,6 @@
 
   <!-- Plugin CSS -->
   <!-- Custom styles for this template -->
-  <link href="{% static 'css/creative.css' %}" rel="stylesheet">
   <link href="{% static 'css/karaco.css' %} " rel="stylesheet">
   {% render_block "css" %}
 </head>
@@ -142,8 +141,8 @@
 
   <!-- Custom scripts for this template -->
   <script src="{% static 'js/creative.min.js' %}"></script>
-  <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
-  <script src="{% static 'js/karaco.js' %}"></script> {% render_block "js" %}
+ 
+ {% render_block "js" %}
 
 
 </body>
