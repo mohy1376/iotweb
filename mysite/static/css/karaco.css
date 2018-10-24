@@ -43,6 +43,7 @@
 body, html {
     width: 100%; 
     height: 100%;
+    font-family: IranSansLight !important;
 }
 
 html {
@@ -95,20 +96,7 @@ a:hover {
     text-transform: uppercase;
 }
 
-.persian {
-    font-family: IranSansLight;
-    font-size: 150%;
-}
 
-.persianText {
-    font-family: IranSansLight;
-    font-size: 150%;
-}
-
-.persianTitle {
-    font-family: IranSansLight;
-    font-size: 250%;
-}
 .rtl {
     direction: rtl;
 }
@@ -158,7 +146,7 @@ footer>section {
 hr {
     max-width: 50px;
     border-width: 3px;
-    border-color: #f05f40;
+    border-color: #3f5765;
 }
 
 hr.light {
@@ -195,7 +183,7 @@ hr.light {
 
 #mainNav .navbar-brand {
     font-size: 120%;
-    font-family: IranSansLight;
+    /* font-family: IranSansLight; */
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -286,7 +274,7 @@ section {
 }
 
 footer h6 {
-    font-family: IranSansLight;
+    /* font-family: IranSansLight; */
     font-size: 140%;
 }
 
@@ -314,29 +302,12 @@ footer>section>div:nth-child(3) a, footer>section>div:nth-child(3)>div>div>p {
 h1{
     margin: 0 !important;
 }
-#events h3, h2 {
-    font-family: IranSansLight;
-}
-
-#news h2 {
-    font-family: IranSansLight;
-}
 
 #events hr {
     border-color: #043241;
 }
 
-#news hr {
-    border-color: antiquewhite;
-}
 
-.spacer {
-    border: solid;
-    border-color: #9d9d9d;
-    border-radius: 20px;
-    height: 250px;
-    margin: 0px 0px 20px 0px;
-}
 
 .post * {
     direction: rtl;
@@ -344,20 +315,22 @@ h1{
 }
 
 .spacer {
-    overflow: scroll;
-    overflow-x: hidden;
-}
+    border-radius: 3%;
+    max-height: 450px;
+    min-height: 450px;
+    margin: 0px 0px 20px 0px;
+   
 
+}
+#news .spacer{
+ background-color: #3f464e;
+}
+.spacer:hover{
+ 
+    box-shadow:5px 5px 6px grey;
+}
 .spacer {
-    -ms-overflow-style: none;
-}
-
-.spacer {
-    overflow: -moz-scrollbars-none;
-}
-
-.spacer:hover {
-    background-color: #3f464e;
+   overflow: hidden;
 }
 
 .spacer h2>a:hover {
@@ -365,27 +338,22 @@ h1{
     color: white;
 }
 
-.spacer::-webkit-scrollbar {
-    width: 0px !important;
-    /* remove scrollbar space */
-    background: transparent;
-    /* optional: just make scrollbar invisible */
-}
-
 .spacer .authorname {
     color: whitesmoke;
+}
+
+#articles .spacer{
+    background-color: #e1e1e1;
 }
 
 #articles .spacer .post-excerpt, #articles .authorname {
     color: black;
 }
 
-#articles .spacer:hover {
-    background-color: #e1e1e1;
-}
 
 .latest_article_article {
     margin-top: 5px;
+    padding: 5px 15px 5px 15px;
 }
 
 .newsheader {
@@ -420,13 +388,13 @@ h1{
 }
 
 .post span {
-    font-family: IranSansLight !important;
+    /* font-family: IranSansLight !important; */
     line-height: 180%;
 }
 
 .post-title {
     margin: 0;
-    font-family: IranSansLight;
+    /* font-family: IranSansLight; */
 }
 
 article h2 {
@@ -464,6 +432,7 @@ article>header>h2>a:hover {
 }
 
 .post-title a {
+    
     text-decoration: none;
     color: #043241;
 }
@@ -476,7 +445,7 @@ article>header>h2>a:hover {
 .post-excerpt {
     margin: 0px;
     padding: 0px;
-    font-family: IranSansLight;
+    /* font-family: IranSansLight; */
 }
 
 ::-moz-selection {
@@ -532,7 +501,6 @@ body {
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     transition: all 0.2s;
-    font-family: IranSansLight;
 }
 
 .login {
