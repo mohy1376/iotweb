@@ -311,7 +311,9 @@ footer>section>div:nth-child(3) a, footer>section>div:nth-child(3)>div>div>p {
     padding-bottom: 0px;
     background-color: #efefef;
 }
-
+h1{
+    margin: 0 !important;
+}
 #events h3, h2 {
     font-family: IranSansLight;
 }
@@ -424,6 +426,7 @@ footer>section>div:nth-child(3) a, footer>section>div:nth-child(3)>div>div>p {
 
 .post-title {
     margin: 0;
+    font-family: IranSansLight;
 }
 
 article h2 {
@@ -473,6 +476,7 @@ article>header>h2>a:hover {
 .post-excerpt {
     margin: 0px;
     padding: 0px;
+    font-family: IranSansLight;
 }
 
 ::-moz-selection {
