@@ -552,6 +552,7 @@ body {
     font-family: monospace;
 }
 
+
 .user {
     font-size: 10px !important;
     font-weight: normal !important;
@@ -562,6 +563,7 @@ body {
 .user:hover {
     color: #1b2331;
 }
+
 
 #mainNav .navbar-nav>li.nav-item>a.logout, #mainNav .navbar-nav>li.nav-item>a.logout:focus {
     font-size: 10px;
