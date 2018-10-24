@@ -19,7 +19,7 @@ urlpatterns = [
 ]
 
 urlpatterns += i18n_patterns(
-    url(r'^admin/', include(admin.site.urls)),  # NOQA
+    url(r'^sedayearvah/', include(admin.site.urls)),  # NOQA
     url(r'^taggit_autosuggest/', include('taggit_autosuggest.urls')),
     url(r'^', include('iot.urls', namespace='iot')),
     url(r'^', include('cms.urls')),
