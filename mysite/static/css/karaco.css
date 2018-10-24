@@ -598,7 +598,7 @@ body {
     font-family: monospace;
 }
 .user{
-    font-size: 10px !important;
+    font-size: 14px !important;
     font-weight: normal !important;
     text-transform: none !important;
     display: inline !important;
@@ -608,7 +608,7 @@ body {
     color: #1b2331;
 }
 #mainNav .navbar-nav > li.nav-item > a.logout, #mainNav .navbar-nav > li.nav-item > a.logout:focus {
-    font-size: 10px;
+    font-size: 14px;
     padding-top: 0px;
 }
 
