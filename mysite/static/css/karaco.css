@@ -119,6 +119,7 @@ a:hover {
 .header_logo {
     padding-top: 50px;
     padding-bottom: 20px;
+    margin-top: 34px;
 }
 
 .header_logo img {
@@ -469,9 +470,17 @@ article>header>h2>a:hover {
 }
 
 .searchbtn:hover{
- color: #1c678f;
+
+ background-color: #1c678f7a;
+ border-radius: 20px;
+
 }
 
+
+
+#search {
+    display: none;
+}
 ::-moz-selection {
     color: #fff;
     background: #212529;
