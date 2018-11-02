@@ -143,7 +143,15 @@
 
   <!-- Custom scripts for this template -->
   <script src="{% static 'js/creative.min.js' %}"></script>
- 
+  <script>
+      $(document).ready(function(){
+          $('#btnSearch').click(function(){
+            $('#search').fadeToggle("slow")
+          })
+  
+      })
+    
+    </script>
  {% render_block "js" %}
 
 
