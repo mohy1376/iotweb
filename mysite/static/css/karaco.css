@@ -13,6 +13,13 @@
     url("../fonts/BRoya.ttf") format("truetype");
     /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
 }
+@font-face {
+    font-family: "BTitrBold";
+    src: url("../fonts/BTitrBold.eot") format("eot"), /* IE6–8 */
+    url("../fonts/BTitrBold.woff") format("woff"), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url("../fonts/BTitrBold.ttf") format("truetype");
+    /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
 
 @font-face {
     font-family: "BNazanin";
@@ -323,7 +330,7 @@ h1{
 
 }
 #news .spacer{
- background-color: #3f464e;
+ background-color: #e1e1e1;
 }
 .spacer:hover{
  
@@ -392,10 +399,7 @@ h1{
     line-height: 180%;
 }
 
-.post-title {
-    margin: 0;
-    /* font-family: IranSansLight; */
-}
+
 
 article h2 {
     font-size: 2rem;
@@ -431,6 +435,18 @@ article>header>h2>a:hover {
     text-decoration: none;
 }
 
+.post-title {
+    margin: 0;
+    font-family: BTitrBold; 
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+.latest_post-title{
+    font-size: 18px;
+}
+.latest_time{
+    font-size: 14px;
+}
 .post-title a {
     
     text-decoration: none;
@@ -445,7 +461,15 @@ article>header>h2>a:hover {
 .post-excerpt {
     margin: 0px;
     padding: 0px;
-    /* font-family: IranSansLight; */
+    font-family: IranSansLight; 
+}
+.latest_post-excerpt *{
+    
+    font-size: 15px ;
+}
+
+.searchbtn:hover{
+ color: #1c678f;
 }
 
 ::-moz-selection {
