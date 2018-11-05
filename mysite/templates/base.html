@@ -11,9 +11,9 @@
   <meta name="description" content="{% page_attribute 'meta_description' %}">
   {% endblock meta%}
   <meta name="author" content="">
-
-  <title>{% page_attribute 'page_title' %} - IOT Department</title>
-
+  {% block title %}
+  <title>دپارتمان اینترنت اشیا-{% page_attribute 'page_title' %}</title>
+  {% endblock title %}
   <!-- Bootstrap core CSS -->
   <link rel="icon" href="{% static 'img/logo2.png' %}" type="image/x-icon" />
   <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
