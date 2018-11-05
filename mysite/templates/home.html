@@ -8,6 +8,8 @@
 {% endblock %}
 {% block header %}
 <section class="simpleHeader">
+
+	<div id="search">
 	<form class="form" method="GET">
 		{% csrf_token %}
 		<div class="text-center container ">
@@ -19,7 +21,9 @@
 			</div>
 		</div>
 	</form>
+</div>
 
+<div id = test></div>
 	<div class="text-center header_logo container">
 		<img src="{% static 'img/LogoMammad.png'%}" alt="faild">
 	</div>
