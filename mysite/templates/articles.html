@@ -9,8 +9,14 @@
         {{ block.super }}
     {% endif %}
 {% endblock meta%}
-{% block title %}{% page_attribute "page_title" %}{% endblock title %}
-
+{% block title %}
+    {% if article %}
+        {# rendering article detail page #}
+        <title>{{article.title}}- دپارتمان اینترنت اشیا </title>
+    {% else %}
+        {{ block.super }}
+    {% endif %}
+{% endblock title %}
 
 {% block header %}
 <header class="padhead bg-main"></header>

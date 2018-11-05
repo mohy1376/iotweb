@@ -1,19 +1,12 @@
 {% extends "base.html" %}
 {% load cms_tags staticfiles %}
 
-{% block title %}{% page_attribute "page_title" %}{% endblock title %}
-
-
 {% block nav %}
 <nav class="navbar navbar-expand-lg navbar-light fixed-top rtl" id="mainNav">
 	{% include "menu.html" %}
 	</nav>
 {% endblock %}
 
-
-
-
 {% block header %}
 <header class="padhead bg-main"></header>
-
 {% endblock header %}

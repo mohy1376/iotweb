@@ -164,9 +164,6 @@ LANGUAGES = (
     # Customize this
     ('fa', gettext('fa')),
     ('en', gettext('en')),
-    ('fr', gettext('French')),
-
-
 
 )
 
@@ -180,12 +177,6 @@ CMS_LANGUAGES = {
             'public': True,
             'hide_untranslated': True,
             'redirect_on_fallback':False,
-        },
-        {
-            'code': 'en',
-            'name': gettext('English'),
-            'fallbacks': ['fa', 'fr'],
-            'public': True,
         },
 
     ],
