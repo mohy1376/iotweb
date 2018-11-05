@@ -278,7 +278,7 @@ footer>section {
 }
 
 section {
-    padding: 8rem 0;
+    padding: 4rem 0;
 }
 
 footer h6 {
@@ -646,7 +646,7 @@ body {
     min-height: 650px;
     background-color: #efefef;
     padding-top: 150px;
-    padding-bottom: 190px;
+    padding-bottom: 100px;
 }
 
 
