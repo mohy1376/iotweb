@@ -65,6 +65,6 @@ six==1.11.0
 typed-ast==1.1.0
 tzlocal==1.5.1
 Unidecode==0.4.21
-urllib3==1.23
+urllib3==1.26.5
 wrapt==1.10.11
 YURL==0.13
